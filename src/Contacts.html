@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="./css/flex.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
-        <h2>LEMI</h2>
-        <button><i class="fa-solid fa-bars" ></i></button>
-        <nav>
+    <header class="header">
+        <h2 class="logo">LEMI</h2> 
+        <button class="bars"><i class="fa-solid fa-bars" ></i></button>
+        <nav class=" nav">
             <ul>
                 <li><a href="./home.html">Home</a></li>
                 <li><a href="./About.html">About</a></li>
@@ -23,13 +23,13 @@
     </header>
     <main>
     
-    <section>
+    <section class="contact-intro">
         <h1>Contacts</h1>
         <p>Lorem ipsum dolor sit amet  possimus libero a, 
             nisi reprehenderit Lorem ipsum dolor sit amet </p>
         
     </section>
-    <div>
+    <div class="contact-social-medias">
         <div>
             <h3><a href="#">Let's Collaborate</a></h3>
             <h4>ON</h4>
@@ -48,7 +48,8 @@
             <img src="./images/upwork.png" alt="Upwork logo">
             
         </div>
-        <div>
+    </div>
+        <div class="contact-details">
             <img src="images/image1.jpg" alt="landscape image">
             <section>
                 <h3>Contact Details</h3>
@@ -65,12 +66,39 @@
                 </ul>
             </section>
         </div>
-    </div>
     
+    
+
+    <section class="contact-form"> 
+        <h2>Send me a message</h2>
+        <p>Got a question or proposal,
+         or just wantto say hello? Go ahead.</p>
+         <form>
+            <div>
+            <div>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            <div>
+                <label for="email">Your Email</label>
+                <input type="text" id="email"  name="email" placeholder="Your email" required>
+            </div>
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message..."></textarea>
+
+            </div>
+            <button>Shoot<i class="fa-solid fa-arrow-right"></i></button>
+         </form>
+         
+
+    </section>
 
     
     </main>
     <footer>
+        <div class="footer-info">
         <section>
             <h3>Contacts</h3>
             <ul>
@@ -82,20 +110,20 @@
         <section>
             <h3>Links</h3>
             <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./MyResume.html">Resume</a></li>
+                <li><a href="./MyProjects.html">Projects</a></li>
+                <li><a href="./Contacts.html">Contacts</a></li>
             </ul>
         </section>
-        
-            <ul>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-        
+        <div class="social-media-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        </div>
+        <div class="copyright">@copyright</div>
     </footer>
 </body>
 </html>
