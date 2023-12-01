@@ -25,7 +25,6 @@ body {
     grid-template-columns: repeat(2, auto);
     place-items: center;
     justify-content: space-between;
-    padding: auto 15%;
     margin: 0;
     
 }
@@ -92,7 +91,7 @@ body {
     text-align: left;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat( 2 auto);
+    grid-template-rows: repeat(2,auto);
     place-items: center;
     justify-content: center;
 
@@ -242,7 +241,7 @@ body {
     justify-content: space-between;
     place-items: center;
     height: 30px;
-    padding: auto 20px;
+    padding: 5px;
 }
 .skills-section .other-skills .skill-desc  * {margin:0;}
 .skills-section .other-skills .progress {
