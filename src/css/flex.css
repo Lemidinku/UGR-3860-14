@@ -24,7 +24,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: auto 15%;
     margin: 0;
     
 }
@@ -239,7 +238,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 30px;
-    padding: auto 20px;
+    padding: 5px;
 
 
 }
@@ -406,7 +405,7 @@ footer .copyright {
     width: 90%;
     margin: auto;
     display:flex;
-    justify-content: justify;
+    justify-content: space-between;
     gap: 3%;
     border-top: 1px solid black;
 }
