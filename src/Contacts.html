@@ -23,77 +23,66 @@
     </header>
     <main>
     
-    <section class="contact-intro">
-        <h1>Contacts</h1>
-        <p>Lorem ipsum dolor sit amet  possimus libero a, 
-            nisi reprehenderit Lorem ipsum dolor sit amet </p>
-        
-    </section>
-    <div class="contact-social-medias">
-        <div>
-            <h3><a href="#">Let's Collaborate</a></h3>
-            <h4>ON</h4>
-            <img src="./images/github.png" alt="github logo">
-            
+        <section class="contact-intro">
+            <h1 class="contact-intro__title">Contacts</h1>
+            <p class="contact-intro__text">Lorem ipsum dolor sit amet  possimus libero a, nisi reprehenderit Lorem ipsum dolor sit amet </p>
+        </section>
+        <div class="contact-social-medias">
+            <div class="contact-social-medias__item">
+                <h3 class="contact-social-medias__heading"><a href="#" class="contact-social-medias__link">Let's Collaborate</a></h3>
+                <h4 class="contact-social-medias__subheading">ON</h4>
+                <img src="./images/github.png" alt="github logo" class="contact-social-medias__icon">
+            </div>
+            <div class="contact-social-medias__item">
+                <h3 class="contact-social-medias__heading"><a href="#" class="contact-social-medias__link">Follow Me</a></h3>
+                <h4 class="contact-social-medias__subheading">ON</h4>
+                <img src="./images/linkedin.png" alt="LinkedIn logo" class="contact-social-medias__icon">
+            </div>
+            <div class="contact-social-medias__item">
+                <h3 class="contact-social-medias__heading"><a href="#" class="contact-social-medias__link">Hire Me</a></h3>
+                <h4 class="contact-social-medias__subheading">ON</h4>
+                <img src="./images/upwork.png" alt="Upwork logo" class="contact-social-medias__icon">
+            </div>
         </div>
-        <div>
-            <h3><a href="#">Follow Me</a></h3>
-            <h4>ON</h4>
-            <img src="./images/linkedin.png" alt="LinkedIn logo">
-            
-        </div>
-        <div>
-            <h3><a href="#">Hire Me</a></h3>
-            <h4>ON</h4>
-            <img src="./images/upwork.png" alt="Upwork logo">
-            
-        </div>
-    </div>
         <div class="contact-details">
-            <img src="images/image1.jpg" alt="landscape image">
-            <section>
-                <h3>Contact Details</h3>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-user-tie" ></i> Lemi Dinku Gilo <audio src="" ></audio>
-
+            <img src="images/image1.jpg" alt="landscape image" class="contact-details__image">
+            <section class="contact-details__section">
+                <h3 class="contact-details__title">Contact Details</h3>
+                <ul class="contact-details__list">
+                    <li class="contact-details__item">
+                        <i class="fa-solid fa-user-tie"></i> Lemi Dinku Gilo <audio src=""></audio>
                     </li>
-                    <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-                    <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-                    <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-                    <li><i class="fa-brands fa-telegram"></i> @lemidinq</li>
-
+                    <li class="contact-details__item"><i class="fa-solid fa-location-dot"></i> Addis Ababa, 5-Kilo</li>
+                    <li class="contact-details__item"><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
+                    <li class="contact-details__item"><i class="fa-solid fa-phone"></i> +251912334309</li>
+                    <li class="contact-details__item"><i class="fa-brands fa-telegram"></i> @lemidinq</li>
                 </ul>
             </section>
         </div>
     
     
 
-    <section class="contact-form"> 
-        <h2>Send me a message</h2>
-        <p>Got a question or proposal,
-         or just wantto say hello? Go ahead.</p>
-         <form>
-            <div>
-            <div>
-                <label for="name">Your Name</label>
-                <input type="text" id="name" placeholder="Your name" required>
-            </div>
-            <div>
-                <label for="email">Your Email</label>
-                <input type="text" id="email"  name="email" placeholder="Your email" required>
-            </div>
-            </div>
-            <div>
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message..."></textarea>
-
-            </div>
-            <button>Shoot<i class="fa-solid fa-arrow-right"></i></button>
-         </form>
-         
-
-    </section>
+        <section class="contact-form">
+            <h2 class="contact-form__title">Send me a message</h2>
+            <p class="contact-form__text">Got a question or proposal, or just want to say hello? Go ahead.</p>
+            <form class="contact-form__form">
+                <div class="contact-form__group">
+                    <div class="contact-form__field">
+                        <label for="name" class="contact-form__label">Your Name</label>
+                        <input type="text" id="name" class="contact-form__input" placeholder="Your name" required>
+                    </div>
+                    <div class="contact-form__field">
+                        <label for="email" class="contact-form__label">Your Email</label>
+                        <input type="text" id="email" name="email" class="contact-form__input" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="contact-form__field">
+                    <label for="message" class="contact-form__label">Your Message</label>
+                    <textarea id="message" name="message" class="contact-form__textarea" rows="4" cols="50" placeholder="Enter your message..."></textarea>
+                </div>
+                <button class="contact-form__button">Shoot<i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </section>
 
     
     </main>

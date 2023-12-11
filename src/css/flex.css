@@ -475,44 +475,44 @@ footer a {color:var(--text-on-primary);}
 
 /* Projects */
 
-.projects-intro {
+.projects__intro {
 text-align: justify;
 background-color: var(--primary-color);
 color: var(--text-on-primary);
 padding: 3%;
 
 }
-.projects-intro h1 {
+.projects__intro__head {
     text-align: center;
 }
-.projects-intro p {
+.projects__intro__para {
     width: min(90%, 1000px);
     margin:auto;
 }
-.project-cards {
+.project__cards {
     display: flex;
     flex-direction: column;
     width: 90%;
     margin: auto;
     
 }
-.project-cards video{
+.project__card__video{
     width: 90%;
     margin: auto;
     display: block;
 }
 
-.project-card {
+.project__cards__card {
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     margin: 20px auto;
     padding: 20px 5%;
 
 }
-.project-card .project-links {
+.project__cards__card__links {
     text-align: center;
 }
-.project-card .project-links  a {
+.project__cards__card__links  a {
     margin:auto 3%;
 }
 
@@ -537,7 +537,7 @@ padding: 3%;
 
 }
 
-.contact-social-medias > div {
+.contact-social-medias__item{
     width: 80%;
     text-align: center;
     margin: auto;
@@ -557,17 +557,17 @@ padding: 3%;
     border: solid;
     padding: 3%;
 }
-.contact-details img {
+.contact-details__image {
     width: 80%;
     display: block;
     margin: auto;
 }
 
-.contact-details section li{
+.contact-details__item {
     list-style: none;
     margin: 10px auto;
 }
-.contact-details section i {
+.contact-details__item i {
     color: var(--primary-color);
     font-size: 1.4em;
     margin-right: 5px;
@@ -581,25 +581,25 @@ padding: 3%;
     margin: auto;
     width: min(100%, 1000px);
 }
-.contact-form div {
+.contact-form__field {
     margin: 15px auto;
 }
-.contact-form form label {
+.contact-form__label {
     display: block;
     margin-bottom: 5px;
 }
-.contact-form input {
+.contact-form__input {
     /* background-color: red; */
     width: 80%;
     height: 30px;
     outline: none;
 }
-.contact-form textarea {
+.contact-form__textarea {
     width: 80%;
 }
 
 
-.contact-form button {
+.contact-form__button {
     display: block;
     margin:auto;
     width: 30vw;
@@ -610,11 +610,11 @@ padding: 3%;
     outline-color: var(--primary-color);
 }
 
-.contact-form button:hover {
+.contact-form__button:hover {
     color: white;
     background-color: var(--primary-color);
 }
-.contact-form button i {
+.contact-form__button i {
     margin-left: 10%;
 }
 @media (min-width: 480px) {
@@ -705,8 +705,8 @@ padding: 3%;
     justify-content: space-evenly;
     align-items: center;
 }
-.contact-intro h1 {text-align:center;}
-.contact-intro p {
+.contact-intro__title {text-align:center;}
+.contact-intro__text {
     text-align: center;
     margin-bottom: 10px;
     width: min(100%, 1000px);
@@ -721,29 +721,26 @@ padding: 3%;
     align-items: center;
 }
 
-.contact-form form > div:nth-child(1) {
+.contact-form__group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap:1%;
 }
-.contact-form form input {
+.contact-form__input {
     margin: 10px auto;
     height: 40px;
     width: 90%;
 }
-.contact-form form textarea {
+.contact-form__textarea {
     width: 95%;
     height: 100px;
     margin: auto;
 }
-.contact-form form > div:nth-child(1) > * {
+.contact-form__group > * {
     width: 100%;
 }
-.contact-form form > div:nth-child(2) {
-    width: 100%;
-}
-.contact-form form  button {
+.contact-form__button {
     margin-top: 40px;
     width: 50%;
     height: 50px;
@@ -779,11 +776,11 @@ padding: 3%;
         width: 20%;
     }
 
-    .cert__certifications {
+    .project__cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .cert__certifications__card{
+    .project__cards__card{
         width: 90%;
         margin: 20px auto;
     }
