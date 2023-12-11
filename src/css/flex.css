@@ -387,14 +387,14 @@ footer a {color:var(--text-on-primary);}
 /* My resume */
 
 
-.resume-intro {
+.resume__intro {
 
     width: 100%;
     text-align: justify;
     padding: 5%;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
 }
-.resume-intro div {
+.resume__intro__head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -402,15 +402,15 @@ footer a {color:var(--text-on-primary);}
 
 }
 
-.resume-intro div button {
+.resume__intro__head button {
     height: 30px;
 }
-.resume-edu {
+.resume__edu {
     width: min(100%, 1000px);
     margin:auto;
 }
-.resume-edu > h2 { margin: 20px 10%}
-.resume-edu > div {
+.resume__edu__head { margin: 20px 10%}
+.resume__edu__card {
     width: 90%;
     margin: auto;
     display:flex;
@@ -419,35 +419,35 @@ footer a {color:var(--text-on-primary);}
     border-top: 1px solid black;
 }
 
-.resume-edu > div i {
+.resume__edu__card i {
     transform: translateY(10px);
     font-size: 50px;
     color: var(--primary-color);
 }
 
 
-.resume-edu > div * {margin: 5px;}
+.resume__edu__card * {margin: 5px;}
 
-.resume-cert {
+.cert {
     width: min(100%, 1000px);
     margin: auto;
 }
 
-.resume-cert > h2 { margin: 20px 10%}
+.cert__head { margin: 20px 10%}
 
-.resume-cert img {
+.cert__certifications__card__img {
     width: 100%;
 
 }
 
-.resume-cert .certifications {
+.cert__certifications {
     display: flex;
     flex-direction: column;
     
 
 }
 
-.resume-cert .certifications > div {
+.cert__certifications__card {
     width: 90%;
     border: 1px solid rgb(218, 212, 212);
     margin: 10px auto;
@@ -456,14 +456,15 @@ footer a {color:var(--text-on-primary);}
 }
 
 
-.resume-cert .certifications .learned-skills {
+
+.cert__learnedskills {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin: 20px auto;
 }
 
-.resume-cert .certifications h5 {
+.cert__learnedskills h5 {
    background-color:var(--primary-color-tint);  
    color: var(--text-on-primary);
     padding: 5px;
@@ -691,7 +692,7 @@ padding: 3%;
         justify-content: space-between;
     }
     
-    .resume-cert .certifications {
+    .cert__certifications {
     display: grid;  
     grid-template-columns: 1fr 1fr;
 }
@@ -765,7 +766,6 @@ padding: 3%;
         display: block;
         background-color: transparent;
         animation: none;
-        /* width: 50%; */
     }
     .header__nav__list{
         display: flex ;
@@ -779,11 +779,11 @@ padding: 3%;
         width: 20%;
     }
 
-    .project-cards {
+    .cert__certifications {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .project-cards .project-card {
+    .cert__certifications__card{
         width: 90%;
         margin: 20px auto;
     }
