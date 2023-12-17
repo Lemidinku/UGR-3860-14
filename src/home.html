@@ -2,150 +2,247 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Portifolio</title>
+    <style>
+
+    </style>
 </head>
 <body>
-    <header>
-        <h2>LEMI</h2>
-        <button><i class="fa-solid fa-bars" ></i></button>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./MyResume.html">Resume</a></li>
-                <li><a href="./MyProjects.html">Projects</a></li>
-                <li><a href="./Contacts.html">Contacts</a></li>
+    
+     <header class="dropdown is-hoverable is-flex is-justify-content-space-between is-vcentered">
+        <h2 class="title is-2"><a href="./home.html">LEMI</a></h2>
+        <div class="dropdown-trigger is-hidden-desktop" >
+          <button class="button  has-text-info"> 
+            <i class="fa-solid fa-bars is-size-3 " ></i> 
+          </button>
+          <nav class="dropdown-menu "  >
+            <ul class="dropdown-content  has-text-centered" >
+              <li class="dropdown-item  "><a href="home.html">Home</a></li>
+              <li class="dropdown-item "><a href="About.html">About</a></li>
+              <li class="dropdown-item"><a href="MyResume.html">Resume</a></li>
+              <li class="dropdown-item"><a href="MyProjects.html">Projects</a></li>
+              <li class="dropdown-item"><a href="Contacts.html">Contacts</a></li>
             </ul>
+          </nav>
+        </div>
+        
+        <nav class=" navbar is-hidden-mobile is-hidden-tablet-only">
+          <ul class="is-flex has-text-centered " >
+            <li class="navbar-item"><a href="home.html">Home</a></li>
+            <li class="navbar-item"><a href="About.html">About</a></li>
+            <li class="navbar-item"><a href="MyProjects.html">Projects</a></li>
+            <li class="navbar-item"><a href="MyResume.html">Resume</a></li>
+            <li class="navbar-item"><a href="Contacts.html">Contacts</a></li>
+          </ul>
         </nav>
-    </header>
+      </header> 
     <main>
-    <div class="intro-section">
-        <div>
-            <h1>LEMI DINKU</h1>
-            <h2>Software Engineer</h2>
-            <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                nisi consequatur beatae repellat perferendis 
-                facilis omnis reprehenderit </p>
-            </div>
-        <img src="./images/image1.jpg" alt="Image of Lemi Dinku">
-    </div>
-    <section>
-        <h2>Who Am I?</h2>
-        <section>
-            <h3>An Engineer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Obcaecati ad, dolorum 
-                est magnam recusandae quis id maiores nihil
-                 vitae commodi ut laudantium accusantium, 
-                 iusto eligendi asperiores 
-               sapiente officiis tempore delectus! </p>
-        </section>
-        <section>
-            <h3>An Engineer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur
-                 adipisicing elit. Obcaecati ad, dolorum 
-                 est magnam recusandae quis id maiores nihil
-                  vitae commodi ut laudantium accusantium, 
-                  iusto eligendi asperiores 
-                sapiente officiis tempore delectus! </p>
-        </section>
-        <section>
-            <h3>An Engineer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Obcaecati ad, dolorum 
-                est magnam recusandae quis id maiores nihil
-                 vitae commodi ut laudantium accusantium, 
-                 iusto eligendi asperiores 
-               sapiente officiis tempore delectus! </p>
-        </section>
-        </section>
-        <section >
-            <h3>Experience</h3>
-            <p>Lorem ipsum dolor sit amet,
-                 consectetur adipiscing elit. 
-                 Sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip
-                 ex ea commodo consequat. Duis aute irure dolor
-                  in reprehenderit in voluptate velit esse cillum
-                   dolore eu fugiat nulla pariatur. Excepteur sint 
-                   occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
-            </p>
-            <button>My Resume</button>
-        </section>
-        <section class="skills-section">
-            <h2>Skills</h2>
-            <div>
-                <section>
-                    <h4>Python</h4>
-                    <h2>90%</h2>
-                    <h4>2 years</h4>
-                </section>
-                <section>
-                    <h4>JavaScript</h4>
-                    <h2>88%</h2>
-                    <h4>1 years</h4>
-                </section>
-                <section>
-                    <h4>React Js</h4>
-                    <h2>80%</h2>
-                    <h4>6 months</h4>
-                </section>
-                <section>
-                    <h4>Node Js</h4>
-                    <h2>80%</h2>
-                    <h4>4 months</h4>
-                </section>
-            </div>
 
-            <div>
-                <h4>Java</h4>
-                <span>85%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-two-thirds">
+                    <h1 class="title is-1">LEMI DINKU</h1>
+                    <h2 class="subtitle is-3">Software Engineer</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet possimus libero a, 
+                        nisi consequatur beatae repellat perferendis 
+                        facilis omnis reprehenderit
+                    </p>
+                </div>
+                <div class="column">
+                    <figure class="image is-4by3">
+                        <img src="./images/image1.jpg" alt="Image of Lemi Dinku">
+                    </figure>
                 </div>
             </div>
-            <div>
-                <h4>MySQL</h4>
-                <span>82%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>Bootstrap</h4>
-                <span>80%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>MongoDB</h4>
-                <span>85%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>FireBase</h4>
-                <span>75%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>CSS</h4>
-                <span>90%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 id="who-am-i" class="title">Who Am I?</h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="subtitle">An Engineer</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Obcaecati ad, dolorum 
+                                    est magnam recusandae quis id maiores nihil
+                                    vitae commodi ut laudantium accusantium, 
+                                    iusto eligendi asperiores 
+                                    sapiente officiis tempore delectus!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="subtitle">An Engineer</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Obcaecati ad, dolorum 
+                                    est magnam recusandae quis id maiores nihil
+                                    vitae commodi ut laudantium accusantium, 
+                                    iusto eligendi asperiores 
+                                    sapiente officiis tempore delectus!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="subtitle">An Engineer</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Obcaecati ad, dolorum 
+                                    est magnam recusandae quis id maiores nihil
+                                    vitae commodi ut laudantium accusantium, 
+                                    iusto eligendi asperiores 
+                                    sapiente officiis tempore delectus!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="testimonials-section">
+        
+
+    <section class="section">
+        <div class="container">
+            <div class="content ">
+                <h3 class="title">Experience</h3>
+                <p class="has-text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <a href="./MyResume.html" class="button is-primary">
+                    My Resume <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills-section">
+
+            <section class="section">
+                <div class="container is-6 is-offset-3-tablet">
+                    <h2 class="title">Skills</h2>
+                    <div class="columns  is-multiline  "> 
+                        <div class="column is-2-desktop  is-offset-0-desktop is-offset-2-desktop is-4-tablet is-offset-2-tablet  is-8-mobile is-offset-one-quarter-mobile">
+                        
+                        <div class="box has-text-centered is-flex is-justify-content-center is-flex-direction-column ">
+                                <h4 class="subtitle">Python</h4>
+                                <h2 class="title is-2">90%</h2>
+                                <p>2 years</p>
+                            </div>
+                        </div>
+                        <div class="column is-2-desktop is-offset-0-desktop is-4-tablet is-offset-2-tablet  is-8-mobile is-offset-one-quarter-mobile" >
+                            <div class="box has-text-centered is-flex is-justify-content-center is-flex-direction-column">
+                                <h4 class="subtitle">JavaScript</h4>
+                                <h2 class="title is-2">88%</h2>
+                                <p>1 year</p>
+                            </div>
+                        </div>
+                        <div class="column is-2-desktop  is-offset-0-desktop is-offset-2-tablet is-4-tablet  is-8-mobile is-offset-one-quarter-mobile">
+                            <div class="box has-text-centered is-flex is-justify-content-center is-flex-direction-column">
+                                <h4 class="subtitle ">React Js</h4>
+                                <h2 class="title is-2">80%</h2>
+                                <p>6 months</p>
+                            </div>
+                        </div>
+                        <div class="column is-2-desktop is-offset-0-desktop  is-offset-2-tablet is-4-tablet   is-8-mobile is-offset-one-quarter-mobile">
+                            <div class="box has-text-centered is-flex is-justify-content-center is-flex-direction-column">
+                                <h4 class="subtitle">Node Js</h4>
+                                <h2 class="title is-2">80%</h2>
+                                <p>4 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        <div class="container skills-container">
+            <div class="columns is-multiline ">
+              <div class="column is-4-tablet is-offset-2-tablet">
+                <div class="box">
+                  <div class="is-flex is-justify-content-space-between">
+                    <h4>Java</h4>
+                    <span>85%</span>
+                  </div>
+                  <progress class="progress " value="80" max="100">80%</progress>
+                  
+                </div>
+              </div>
+              <div class="column is-4-tablet">
+                <div class="box has-shadow">
+                  <div class="is-flex is-justify-content-space-between">
+                    <h4>MySQL</h4>
+                    <span>82%</span>
+                  </div>
+                  <progress class="progress" value="80" max="100">80%</progress>
+                </div>
+              </div>
+              <div class="column is-4-tablet is-offset-2-tablet">
+                <div class="box">
+                  <div class="is-flex is-justify-content-space-between">
+                    <h4>Bootstrap</h4>
+                    <span>80%</span>
+                  </div>
+                  <progress class="progress" value="80" max="100">80%</progress>
+                </div>
+              </div>
+              <div class="column is-4-tablet">
+                <div class="box">
+                  <div class="is-flex is-justify-content-space-between">
+                    <h4>MongoDB</h4>
+                    <span>85%</span>
+                  </div>
+                  <progress class="progress" value="85" max="100">85%</progress>
+                </div>
+              </div>
+              <div class="column is-4-tablet is-offset-2-tablet">
+                <div class="box">
+                  <div class="is-flex is-justify-content-space-between">
+                    <h4>FireBase</h4>
+                    <span>75%</span>
+                  </div>
+                  <progress class="progress" value="80" max="100">80%</progress>
+                </div>
+              </div>
+              <div class="column is-4-tablet">
+                <div class="box">
+                  <div class="is-flex is-justify-content-space-between">
+                    <h4>CSS</h4>
+                    <span>87%</span>
+                  </div>
+                  <progress class="progress" value="85" max="100">85%</progress>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    
+    <!-- <section class="testimonials-section">
             <h2>Testimonials</h2>
             <div>
                 
                 <i class="fa-solid fa-chevron-left"></i>
-                <div>
+                <div class="testimonial-card">
                     <img src="./images/profile.png" alt="image of the testimony givers">
                     <h3>Dawit Getachew</h3>
                     <h4>A Project Manager</h4>
@@ -154,32 +251,83 @@
                 </div>
                 <i class="fa-solid fa-chevron-right"></i>
                 </div>
-        </section>
+        </section> -->
+        <section class="section ">
+            <h2 class="title is-2">Testimonials</h2>
+            <div class="columns is-mobile is-vcentered is-half-tablet">
+          
+              <div class="column is-1 has-text-right">
+                <span class="icon">
+                  <i class="fas fa-chevron-left"></i>
+                </span>
+              </div>
+          
+              <div class="column  is-flex is-justify-content-center">
+                <div class="card has-text-centered is-half-tablet">
+                  <div class="card-image is-flex is-justify-content-center">
+                    <figure class="image is-64x64">
+                      <img src="./images/profile.png" alt="image of the testimony giver">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-4">Dawit Getachew</p>
+                    <p class="subtitle is-6">A Project Manager</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Delectus, aliquid. Excepturi nihil magnam natus incidunt sint, error voluptates quos iusto
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="column is-1">
+                <span class="icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </div>
+          
+            </div>
+          </section>
     </main>
-    <footer>
-        <section>
-            <h3>Contacts</h3>
-            <ul>
-            <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-            <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-            <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Links</h3>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
-            </ul>
-        </section>
-        <div>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-twitter"></i>
-        </div>
-    </footer>
+    <footer class="footer">
+      <div class="columns ">
+          <div class="column is-5">
+              <section>
+                  <h3 class="title is-5">Contacts</h3>
+                  <ul>
+                      <li><i class="fas fa-location-dot"></i> Addis Ababa, 5-Kilo</li>
+                      <li><i class="fas fa-envelope"></i> lemidinq@gmail.com</li>
+                      <li><i class="fas fa-phone"></i> +251912334309</li>
+                  </ul>
+              </section>
+          </div>
+  
+          <div class="column is-5">
+              <section>
+                  <h3 class="title is-5">Links</h3>
+                  <ul>
+                      <li><a href="./home.html">Home</a></li>
+                      <li><a href="./About.html">About</a></li>
+                      <li><a href="./MyResume.html">Resume</a></li>
+                      <li><a href="./MyProjects.html">Projects</a></li>
+                      <li><a href="./Contacts.html">Contacts</a></li>
+                  </ul>
+              </section>
+          </div>
+  
+          <div class="column">
+              <div class="is-flex-tablet is-flex-direction-column is-size-4">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-telegram"></i></a>
+              </div>
+          </div>
+      </div>
+  
+      <div class="content has-text-centered">
+          <p>&copy; Copyright</p>
+      </div>
+  </footer>
+  
 </body>
 </html>

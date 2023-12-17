@@ -3,127 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
-        <h2>LEMI</h2>
-        <button><i class="fa-solid fa-bars" ></i></button>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./MyResume.html">Resume</a></li>
-                <li><a href="./MyProjects.html">Projects</a></li>
-                <li><a href="./Contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="dropdown is-hoverable is-flex is-justify-content-space-between is-vcentered">
+    <h2 class="title is-2"><a href="./home.html">LEMI</a></h2>
+    <div class="dropdown-trigger is-hidden-desktop" >
+      <button class="button  has-text-info"> 
+        <i class="fa-solid fa-bars is-size-3 " ></i> 
+      </button>
+      <nav class="dropdown-menu "  >
+        <ul class="dropdown-content  has-text-centered" >
+          <li class="dropdown-item  "><a href="home.html">Home</a></li>
+          <li class="dropdown-item "><a href="About.html">About</a></li>
+          <li class="dropdown-item"><a href="MyResume.html">Resume</a></li>
+          <li class="dropdown-item"><a href="MyProjects.html">Projects</a></li>
+          <li class="dropdown-item"><a href="Contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <nav class=" navbar is-hidden-mobile is-hidden-tablet-only">
+      <ul class="is-flex has-text-centered " >
+        <li class="navbar-item"><a href="home.html">Home</a></li>
+        <li class="navbar-item"><a href="About.html">About</a></li>
+        <li class="navbar-item"><a href="MyProjects.html">Projects</a></li>
+        <li class="navbar-item"><a href="MyResume.html">Resume</a></li>
+        <li class="navbar-item"><a href="Contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header> 
     <main>
     
-    <section>
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet  possimus libero a, 
-            nisi consequatur beatae repellat perferendis 
-            facilis omnis reprehenderit Lorem ipsum dolor 
-            sit amet consectetur adipisicing elit. Dolor
-            accusamus deserunt nulla natus, quis magnam 
-            hic itaque non dolorem reprehenderit ducimus
-            suscipit impedit, doloribus perspiciatis, modi
-            consequatur aspernatur nesciunt 
-            laboriosam?</p>
-        
-    </section>
-        
-    <div>
-        <div>
-            <img src="images/image1.jpg" alt="image of a landscape">
-            <section>
-                <h3>A Software Engineer</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                    nisi consequatur beatae repellat perferendis 
-                    facilis omnis reprehenderit Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Dolor
-                    accusamus deserunt nulla natus, quis magnam 
-                    hic itaque non dolorem reprehenderit ducimus
-                    suscipit impedit, doloribus perspiciatis, modi
-                    consequatur aspernatur nesciunt 
-                    laboriosam?</p>
-            </section>
-        </div>
-        <div>
-            <section>
-                <h3>A Competitive Programmer</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                    nisi consequatur beatae repellat perferendis 
-                    facilis omnis reprehenderit Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Dolor
-                    accusamus deserunt nulla natus, quis magnam 
-                    hic itaque non dolorem reprehenderit ducimus
-                    suscipit impedit, doloribus perspiciatis, modi
-                    consequatur aspernatur nesciunt 
-                    laboriosam?</p>
-            </section>
-            <img src="images/image1.jpg" alt="image of a landscape">
+        <section class="section">
+            <div class="container">
+              <h1 class="title">About Me</h1>
+              <p>
+                Lorem ipsum dolor sit amet, possimus libero a, 
+                nisi consequatur beatae repellat perferendis 
+                facilis omnis reprehenderit. Lorem ipsum dolor 
+                sit amet consectetur adipisicing elit. Dolor
+                accusamus deserunt nulla natus, quis magnam 
+                hic itaque non dolorem reprehenderit ducimus
+                suscipit impedit, doloribus perspiciatis, modi
+                consequatur aspernatur nesciunt laboriosam?
+              </p>
             </div>
-        <div>
-            <img src="images/image1.jpg" alt="image of a landscape">
-            <section>
-                <h3>A Tech Enthusiast</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                    nisi consequatur beatae repellat perferendis 
-                    facilis omnis reprehenderit Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Dolor
-                    accusamus deserunt nulla natus, quis magnam 
-                    hic itaque non dolorem reprehenderit ducimus
-                    suscipit impedit, doloribus perspiciatis, modi
-                    consequatur aspernatur nesciunt 
-                    laboriosam?</p>
-            </section>
-        </div>
-        <div>
-            <section>
-                <h3>A freelancer</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                    nisi consequatur beatae repellat perferendis 
-                    facilis omnis reprehenderit Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Dolor
-                    accusamus deserunt nulla natus, quis magnam 
-                    hic itaque non dolorem reprehenderit ducimus
-                    suscipit impedit, doloribus perspiciatis, modi
-                    consequatur aspernatur nesciunt 
-                    laboriosam?</p>
-            </section>
-            <img src="images/image1.jpg" alt="image of a landscape">
-        </div>
+          </section>
+
+
+    <div class="columns is-multiline is-mobile">
+
+        <!-- Card 1 -->
+        <div class="column is-8 is-offset-2 ">
+            <div class="card columns is-vcentered">
+              <div class=" column card-image">
+                <figure class="image is-4by3">
+                  <img src="images/image1.jpg" alt="image of a landscape">
+                </figure>
+              </div>
+              <div class=" column card-content">
+                <h3 class="title">A Software Engineer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, possimus libero a, 
+                  nisi consequatur beatae repellat perferendis 
+                  facilis omnis reprehenderit. Lorem ipsum dolor 
+                  sit amet consectetur adipisicing elit. Dolor
+                  accusamus deserunt nulla natus, quis magnam 
+                  hic itaque non dolorem reprehenderit ducimus
+                  suscipit impedit, doloribus perspiciatis, modi
+                  consequatur aspernatur nesciunt laboriosam?
+                </p>
+              </div>
+            </div>
+          </div>
+      
+      
+      
+        <!-- Card 2 -->
+        <div class="column is-8 is-offset-2 ">
+            <div class="card columns is-vcentered">
+              <div class=" column card-image">
+                <figure class="image is-4by3">
+                  <img src="images/image1.jpg" alt="image of a landscape">
+                </figure>
+              </div>
+              <div class=" column card-content">
+                <h3 class="title">A Software Engineer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, possimus libero a, 
+                  nisi consequatur beatae repellat perferendis 
+                  facilis omnis reprehenderit. Lorem ipsum dolor 
+                  sit amet consectetur adipisicing elit. Dolor
+                  accusamus deserunt nulla natus, quis magnam 
+                  hic itaque non dolorem reprehenderit ducimus
+                  suscipit impedit, doloribus perspiciatis, modi
+                  consequatur aspernatur nesciunt laboriosam?
+                </p>
+              </div>
+            </div>
+          </div>
+      
+      
+        <!-- Card 3 -->
+        <div class="column is-8 is-offset-2 ">
+            <div class="card columns is-vcentered">
+              <div class=" column card-image">
+                <figure class="image is-4by3">
+                  <img src="images/image1.jpg" alt="image of a landscape">
+                </figure>
+              </div>
+              <div class=" column card-content">
+                <h3 class="title">A Software Engineer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, possimus libero a, 
+                  nisi consequatur beatae repellat perferendis 
+                  facilis omnis reprehenderit. Lorem ipsum dolor 
+                  sit amet consectetur adipisicing elit. Dolor
+                  accusamus deserunt nulla natus, quis magnam 
+                  hic itaque non dolorem reprehenderit ducimus
+                  suscipit impedit, doloribus perspiciatis, modi
+                  consequatur aspernatur nesciunt laboriosam?
+                </p>
+              </div>
+            </div>
+          </div>
+      
+      
+      
+        <!-- Card 4 -->
+        <div class="column is-8 is-offset-2 ">
+            <div class="card columns is-vcentered">
+              <div class=" column card-image">
+                <figure class="image is-4by3">
+                  <img src="images/image1.jpg" alt="image of a landscape">
+                </figure>
+              </div>
+              <div class=" column card-content">
+                <h3 class="title">A Software Engineer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, possimus libero a, 
+                  nisi consequatur beatae repellat perferendis 
+                  facilis omnis reprehenderit. Lorem ipsum dolor 
+                  sit amet consectetur adipisicing elit. Dolor
+                  accusamus deserunt nulla natus, quis magnam 
+                  hic itaque non dolorem reprehenderit ducimus
+                  suscipit impedit, doloribus perspiciatis, modi
+                  consequatur aspernatur nesciunt laboriosam?
+                </p>
+              </div>
+            </div>
+          </div>
+      
+      
     </div>
+
+</body>
+</html>
+
     </main>
-    <footer>
-        <section>
-            <h3>Contacts</h3>
-            <ul>
-            <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-            <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-            <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Links</h3>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./MyResume.html">Resume</a></li>
-                <li><a href="./MyProjects.html">Projects</a></li>
-                <li><a href="./Contacts.html">Contacts</a></li>
-            </ul>
-        </section>
-        <div>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-twitter"></i>
-        </div>
-    </footer>
+    <footer class="footer">
+      <div class="columns ">
+          <div class="column is-5">
+              <section>
+                  <h3 class="title is-5">Contacts</h3>
+                  <ul>
+                      <li><i class="fas fa-location-dot"></i> Addis Ababa, 5-Kilo</li>
+                      <li><i class="fas fa-envelope"></i> lemidinq@gmail.com</li>
+                      <li><i class="fas fa-phone"></i> +251912334309</li>
+                  </ul>
+              </section>
+          </div>
+  
+          <div class="column is-5">
+              <section>
+                  <h3 class="title is-5">Links</h3>
+                  <ul>
+                      <li><a href="./home.html">Home</a></li>
+                      <li><a href="./About.html">About</a></li>
+                      <li><a href="./MyResume.html">Resume</a></li>
+                      <li><a href="./MyProjects.html">Projects</a></li>
+                      <li><a href="./Contacts.html">Contacts</a></li>
+                  </ul>
+              </section>
+          </div>
+  
+          <div class="column">
+              <div class="is-flex-tablet is-flex-direction-column is-size-4">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-telegram"></i></a>
+              </div>
+          </div>
+      </div>
+  
+      <div class="content has-text-centered">
+          <p>&copy; Copyright</p>
+      </div>
+  </footer>
 </body>
 </html>

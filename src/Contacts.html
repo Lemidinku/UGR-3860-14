@@ -4,98 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
-        <h2>LEMI</h2>
-        <button><i class="fa-solid fa-bars" ></i></button>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./MyResume.html">Resume</a></li>
-                <li><a href="./MyProjects.html">Projects</a></li>
-                <li><a href="./Contacts.html">Contacts</a></li>
+    <header class="dropdown is-hoverable is-flex is-justify-content-space-between is-vcentered">
+        <h2 class="title is-2"><a href="./home.html">LEMI</a></h2>
+        <div class="dropdown-trigger is-hidden-desktop" >
+          <button class="button  has-text-info"> 
+            <i class="fa-solid fa-bars is-size-3 " ></i> 
+          </button>
+          <nav class="dropdown-menu "  >
+            <ul class="dropdown-content  has-text-centered" >
+              <li class="dropdown-item  "><a href="home.html">Home</a></li>
+              <li class="dropdown-item "><a href="About.html">About</a></li>
+              <li class="dropdown-item"><a href="MyResume.html">Resume</a></li>
+              <li class="dropdown-item"><a href="MyProjects.html">Projects</a></li>
+              <li class="dropdown-item"><a href="Contacts.html">Contacts</a></li>
             </ul>
+          </nav>
+        </div>
+        
+        <nav class=" navbar is-hidden-mobile is-hidden-tablet-only">
+          <ul class="is-flex has-text-centered " >
+            <li class="navbar-item"><a href="home.html">Home</a></li>
+            <li class="navbar-item"><a href="About.html">About</a></li>
+            <li class="navbar-item"><a href="MyProjects.html">Projects</a></li>
+            <li class="navbar-item"><a href="MyResume.html">Resume</a></li>
+            <li class="navbar-item"><a href="Contacts.html">Contacts</a></li>
+          </ul>
         </nav>
-    </header>
+      </header> 
     <main>
     
-    <section>
-        <h1>Contacts</h1>
-        <p>Lorem ipsum dolor sit amet  possimus libero a, 
-            nisi reprehenderit Lorem ipsum dolor sit amet </p>
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Contacts</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, possimus libero a, nisi reprehenderit Lorem ipsum dolor sit amet
+                </p>
+            </div>
+        </section>
         
-    </section>
-    <div>
-        <div>
-            <h3><a href="#">Let's Collaborate</a></h3>
-            <h4>ON</h4>
-            <img src="./images/github.png" alt="github logo">
-            
-        </div>
-        <div>
-            <h3><a href="#">Follow Me</a></h3>
-            <h4>ON</h4>
-            <img src="./images/linkedin.png" alt="LinkedIn logo">
-            
-        </div>
-        <div>
-            <h3><a href="#">Hire Me</a></h3>
-            <h4>ON</h4>
-            <img src="./images/upwork.png" alt="Upwork logo">
-            
-        </div>
-        <div>
-            <img src="images/image1.jpg" alt="landscape image">
-            <section>
-                <h3>Contact Details</h3>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-user-tie" ></i> Lemi Dinku Gilo <audio src="" ></audio>
 
-                    </li>
-                    <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-                    <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-                    <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-                    <li><i class="fa-brands fa-telegram"></i> @lemidinq</li>
+        <div class="columns is-centered is-justify-content-space-evenly m-6">
+            <div class="column card has-text-centered is-6-mobile is-offset-3-mobile is-2-tablet is-offset-1.5-tablet mt-6">
+                <h3 class="title is-4"><a href="#">Let's Collaborate</a></h3>
+                <h4 class="subtitle is-6">ON</h4>
+                <div class="is-flex is-justify-content-center">
 
-                </ul>
-            </section>
+                <figure class="image is-64x64">
+                    <img src="./images/github.png" alt="GitHub logo">
+                </figure>
+                </div>
+
+            </div>
+        
+            <div class="column card has-text-centered is-6-mobile is-offset-3-mobile is-2-tablet mt-6">
+                <h3 class="title is-4"><a href="#">Follow Me</a></h3>
+                <h4 class="subtitle is-6">ON</h4>
+                <div class="is-flex is-justify-content-center">
+                <figure class="image is-64x64 is-flex is-justify-content-center" >
+                    <img src="./images/linkedin.png" alt="LinkedIn logo">
+                </figure>
+            </div>
+            </div>
+        
+            <div class="column card has-text-centered is-6-mobile is-offset-3-mobile is-2-tablet mt-6">
+                <h3 class="title is-4"><a href="#">Hire Me</a></h3>
+                <h4 class="subtitle is-6">ON</h4>
+                <div class="is-flex is-justify-content-center">
+
+                <figure class="image is-70x64">
+                    <img src="./images/upwork.png" alt="Upwork logo">
+                </figure>
+                </div>
+            </div>
         </div>
+        
+        <div class="columns m-6 ">
+            <div class="column is-two-third is-offset-2">
+                <figure class="image is-4by3 is-6">
+                    <img src="images/image1.jpg" alt="landscape image">
+                </figure>
+            </div>
+            <div class="column ml-4">
+                <section>
+                    <h3 class="title is-4">Contact Details</h3>
+                    <ul class="is-size-4 ">
+                        <li><i class="fas fa-user-tie"></i> Lemi Dinku Gilo</li>
+                        <li><i class="fas fa-location-dot"></i> Addis Ababa, 5-Kilo</li>
+                        <li><i class="fas fa-envelope"></i> lemidinq@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +251912334309</li>
+                        <li><i class="fab fa-telegram"></i> @lemidinq</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
     </div>
     
 
     
     </main>
-    <footer>
-        <section>
-            <h3>Contacts</h3>
-            <ul>
-            <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-            <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-            <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Links</h3>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
-            </ul>
-        </section>
-        
-            <ul>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-        
+    <footer class="footer">
+        <div class="columns ">
+            <div class="column is-5">
+                <section>
+                    <h3 class="title is-5">Contacts</h3>
+                    <ul>
+                        <li><i class="fas fa-location-dot"></i> Addis Ababa, 5-Kilo</li>
+                        <li><i class="fas fa-envelope"></i> lemidinq@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +251912334309</li>
+                    </ul>
+                </section>
+            </div>
+    
+            <div class="column is-5">
+                <section>
+                    <h3 class="title is-5">Links</h3>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./About.html">About</a></li>
+                        <li><a href="./MyResume.html">Resume</a></li>
+                        <li><a href="./MyProjects.html">Projects</a></li>
+                        <li><a href="./Contacts.html">Contacts</a></li>
+                    </ul>
+                </section>
+            </div>
+    
+            <div class="column">
+                <div class="is-flex-tablet is-flex-direction-column is-size-4">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="content has-text-centered">
+            <p>&copy; Copyright</p>
+        </div>
     </footer>
 </body>
 </html>
