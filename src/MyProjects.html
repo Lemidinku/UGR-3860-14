@@ -8,19 +8,28 @@
     <title>Portifolio</title>
 </head>
 <body>
-    <header class="header">
-        <h2 class="header__logo"><a class="header__logo__link" href="./home.html">LEMI</a></h2>
-        <button class="header__bars"><i class="fa-solid fa-bars" ></i></button>
-        <nav class="header__nav">
-            <ul class="header__nav__list">
-                <li class="header__nav__list_item"><a href="./home.html">Home</a></li>
-                <li class="header__nav__list_item"><a href="./About.html">About</a></li>
-                <li class="header__nav__list_item"><a href="./MyResume.html">Resume</a></li>
-                <li class="header__nav__list_item"><a href="./MyProjects.html">Projects</a></li>
-                <li class="header__nav__list_item"><a href="./Contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <h2 class="header__logo"><a class="header__logo__link" href="./home.html">LEMI</a></h2>
+    <button class="header__toggler"><i class="fa-solid fa-bars" ></i></button>
+    <nav class="header__nav">
+        <ul class="header__nav__list">
+            <li class="header__nav__list_item"><a href="./home.html">Home</a></li>
+            <li class="header__nav__list_item"><a href="./About.html">About</a></li>
+            <li class="header__nav__list_item"><a href="./MyResume.html">Resume</a></li>
+            <li class="header__nav__list_item"><a href="./MyProjects.html">Projects</a></li>
+            <li class="header__nav__list_item"><a href="./Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <nav class="header__nav__row">
+      <ul class="header__nav__row__ist">
+          <li class="header__nav__list_item"><a href="./home.html">Home</a></li>
+          <li class="header__nav__list_item"><a href="./About.html">About</a></li>
+          <li class="header__nav__list_item"><a href="./MyResume.html">Resume</a></li>
+          <li class="header__nav__list_item"><a href="./MyProjects.html">Projects</a></li>
+          <li class="header__nav__list_item"><a href="./Contacts.html">Contacts</a></li>
+      </ul>
+  </nav>
+</header>
     <main>
     
     <section class="projects__intro">
@@ -34,7 +43,7 @@
         
     </section>  
     <div class="project__cards">
-        <div class="project__cards__card">
+        <div class="project__cards__card fade-in">
             <video class="project__card__video" src="images/PlaceholderVideo.mp4" autoplay loop></video>
             <section>
                 <h3>Vroomy.com</h3>
@@ -50,7 +59,7 @@
                 </div>
             </section>
         </div>
-        <div class="project__cards__card">
+        <div class="project__cards__card fade-in">
             <video class="project__card__video" src="images/PlaceholderVideo.mp4" autoplay loop></video>
             <section>
                 <h3>Weather Web App</h3>
@@ -66,7 +75,7 @@
                     </div>
             </section>
         </div>
-        <div class="project__cards__card">
+        <div class="project__cards__card fade-in">
             <video class="project__card__video" src="images/PlaceholderVideo.mp4" autoplay loop></video>
             <section>
                 <h3>Dictionary Web App</h3>
@@ -82,7 +91,7 @@
                     </div>
             </section>
         </div>
-        <div class="project__cards__card">
+        <div class="project__cards__card fade-in">
             <video class="project__card__video" src="images/PlaceholderVideo.mp4" autoplay loop ></video>
             <section>
                 <h3>MineSweeper</h3>
@@ -104,15 +113,15 @@
         <h2>Testimonials</h2>
         <div class="testimonials__testimony" >
             
-            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-chevron-left" id="testimonial__slider__left"></i>
             <div class="testimonials__testimony__card">
                 <img src="./images/profile.png" alt="image of the testimony givers">
-                <h3>Dawit Getachew</h3>
-                <h4>A Project Manager</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <h3 id="testimonial__slider__name">Dawit Getachew</h3>
+                <h4 id="testimonial__slider__title">A Project Manager</h4>
+                <p id="testimonial__slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Delectus, aliquid. Excepturi nihil magnam natus incidunt sint, error voluptates quos iusto</p>
             </div>
-            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-chevron-right" id="testimonial__slider__right"></i>
             </div>
     </section>
     </main>
@@ -146,5 +155,6 @@
         </div>
         <div class="footer__copyright">@copyright</div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

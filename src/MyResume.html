@@ -9,25 +9,35 @@
     <title>Portifolio</title>
 </head>
 <body>
-    <header class="header">
-        <h2 class="header__logo"><a class="header__logo__link" href="./home.html">LEMI</a></h2>
-        <button class="header__bars"><i class="fa-solid fa-bars" ></i></button>
-        <nav class="header__nav">
-            <ul class="header__nav__list">
-                <li class="header__nav__list_item"><a href="./home.html">Home</a></li>
-                <li class="header__nav__list_item"><a href="./About.html">About</a></li>
-                <li class="header__nav__list_item"><a href="./MyResume.html">Resume</a></li>
-                <li class="header__nav__list_item"><a href="./MyProjects.html">Projects</a></li>
-                <li class="header__nav__list_item"><a href="./Contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <h2 class="header__logo"><a class="header__logo__link" href="./home.html">LEMI</a></h2>
+    <button class="header__toggler"><i class="fa-solid fa-bars" ></i></button>
+    <nav class="header__nav">
+        <ul class="header__nav__list">
+            <li class="header__nav__list_item"><a href="./home.html">Home</a></li>
+            <li class="header__nav__list_item"><a href="./About.html">About</a></li>
+            <li class="header__nav__list_item"><a href="./MyResume.html">Resume</a></li>
+            <li class="header__nav__list_item"><a href="./MyProjects.html">Projects</a></li>
+            <li class="header__nav__list_item"><a href="./Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <nav class="header__nav__row">
+      <ul class="header__nav__row__ist">
+          <li class="header__nav__list_item"><a href="./home.html">Home</a></li>
+          <li class="header__nav__list_item"><a href="./About.html">About</a></li>
+          <li class="header__nav__list_item"><a href="./MyResume.html">Resume</a></li>
+          <li class="header__nav__list_item"><a href="./MyProjects.html">Projects</a></li>
+          <li class="header__nav__list_item"><a href="./Contacts.html">Contacts</a></li>
+      </ul>
+  </nav>
+</header>
     <main>
     
     <section class="resume__intro">
         <div class="resume__intro__head">
         <h1>My Resume</h1>
-        <button>Download CV</button>
+        <button id="resume__download__button"> <a id="download__link" href="images/CV.pdf" download="CV.pdf"></a>
+            Download CV</button>
         </div>
         <p>Lorem ipsum dolor sit amet  possimus libero a, 
             nisi consequatur beatae repellat perferendis 
@@ -63,29 +73,29 @@
     <section class="skills__section">
         <h2 class="skills__section__head">Skills</h2>
         <div class="skills__section__mainskills">
-            <section class="skills__section__mainskills__card">
+            <section class="skills__section__mainskills__card fade-in">
                 <h4>Python</h4>
                 <h2>90%</h2>
                 <h4>2 years</h4>
             </section>
-            <section class="skills__section__mainskills__card">
+            <section class="skills__section__mainskills__card fade-in">
                 <h4>JavaScript</h4>
                 <h2>88%</h2>
                 <h4>1 years</h4>
             </section>
-            <section class="skills__section__mainskills__card">
+            <section class="skills__section__mainskills__card fade-in">
                 <h4>React Js</h4>
                 <h2>80%</h2>
                 <h4>6 months</h4>
             </section>
-            <section class="skills__section__mainskills__card">
+            <section class="skills__section__mainskills__card fade-in">
                 <h4>Node Js</h4>
                 <h2>80%</h2>
                 <h4>4 months</h4>
             </section>
         </div>
         <div class="skills__section__otherskills">
-            <div class="skills__section__otherskills__card"> 
+            <div class="skills__section__otherskills__card left-entry"> 
                 <div class="skills__section__otherskills__card__desc">
                 <h4>Java</h4>
                 <span>85%</span>
@@ -96,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="skills__section__otherskills__card"> 
+            <div class="skills__section__otherskills__card right-entry"> 
                 <div class="skills__section__otherskills__card__desc">
                 <h4>MySQL</h4>
                 <span>82%</span>
@@ -107,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="skills__section__otherskills__card"> 
+            <div class="skills__section__otherskills__card left-entry"> 
                 <div class="skills__section__otherskills__card__desc">
                 <h4>Bootstrap</h4>
                 <span>80%</span>
@@ -118,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="skills__section__otherskills__card"> 
+            <div class="skills__section__otherskills__card right-entry"> 
                 <div class="skills__section__otherskills__card__desc">
                 <h4>MongoDB</h4>
                 <span>85%</span>
@@ -128,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="skills__section__otherskills__card"> 
+            <div class="skills__section__otherskills__card left-entry"> 
                 <div class="skills__section__otherskills__card__desc">
                 <h4>Firebase</h4>
                 <span>75%</span>
@@ -139,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="skills__section__otherskills__card"> 
+            <div class="skills__section__otherskills__card right-entry"> 
                 <div class="skills__section__otherskills__card__desc">
                 <h4>CSS</h4>
                 <span>90%</span>
@@ -156,7 +166,7 @@
     <section class="cert">
         <h2 class="cert__head">Certifications</h2>
         <div class="cert__certifications">
-        <div class="cert__certifications__card">
+        <div class="cert__certifications__card fade-in">
             <img class="cert__certifications__card__img" src="images/ResponsiveWebDesign.png" alt="Responsive Web Design certifications">
             <h4>Responsive Web Design | freeCodeCamp</h4>
             <div class="cert__learnedskills">
@@ -165,7 +175,7 @@
                 <h5>Figma</h5>           
             </div>
         </div>
-        <div class="cert__certifications__card">
+        <div class="cert__certifications__card fade-in">
             <img class="cert__certifications__card__img" src="images/ProblemSolving.png" alt="Problem Solving certifications">
             <h4>Problem Solving| Hackerrank</h4>
             <div class="cert__learnedskills">
@@ -174,7 +184,7 @@
                 <h5>JS</h5>           
             </div>
         </div>
-        <div class="cert__certifications__card">
+        <div class="cert__certifications__card fade-in">
             <img class="cert__certifications__card__img" src="images/PythonBasic.png" alt="Python basic certifications">
             <h4>Python(Basic) | Hackerrank</h4>
             <div class="cert__learnedskills">
@@ -183,7 +193,7 @@
                 <h5>JS</h5>           
             </div>
         </div>
-        <div class="cert__certifications__card">
+        <div class="cert__certifications__card fade-in">
             <img class="cert__certifications__card__img" src="images/ScientificComputingWithPython.png" alt="Scientific Computing with Python certifications">
             <h4>Scientific Computing with Python | freeCodeCamp</h4>
             <div class="cert__learnedskills">
@@ -222,5 +232,6 @@
         </div>
         <div class="footer__copyright">@copyright</div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

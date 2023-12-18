@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <h2 class="header__logo"><a class="header__logo__link" href="./home.html">LEMI</a></h2>
-        <button class="header__bars"><i class="fa-solid fa-bars" ></i></button>
+        <button class="header__toggler"><i class="fa-solid fa-bars" ></i></button>
         <nav class="header__nav">
             <ul class="header__nav__list">
                 <li class="header__nav__list_item"><a href="./home.html">Home</a></li>
@@ -20,6 +20,15 @@
                 <li class="header__nav__list_item"><a href="./Contacts.html">Contacts</a></li>
             </ul>
         </nav>
+        <nav class="header__nav__row">
+          <ul class="header__nav__row__ist">
+              <li class="header__nav__list_item"><a href="./home.html">Home</a></li>
+              <li class="header__nav__list_item"><a href="./About.html">About</a></li>
+              <li class="header__nav__list_item"><a href="./MyResume.html">Resume</a></li>
+              <li class="header__nav__list_item"><a href="./MyProjects.html">Projects</a></li>
+              <li class="header__nav__list_item"><a href="./Contacts.html">Contacts</a></li>
+          </ul>
+      </nav>
     </header>
     <main>
     
@@ -65,7 +74,7 @@
         <section class="contact-form">
             <h2 class="contact-form__title">Send me a message</h2>
             <p class="contact-form__text">Got a question or proposal, or just want to say hello? Go ahead.</p>
-            <form class="contact-form__form">
+            <form class="contact-form__form" id="contact-form__form">
                 <div class="contact-form__group">
                     <div class="contact-form__field">
                         <label for="name" class="contact-form__label">Your Name</label>
@@ -114,5 +123,6 @@
         </div>
         <div class="footer__copyright">@copyright</div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

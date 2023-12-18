@@ -62,12 +62,12 @@ body {
 
  } 
 
-.header__bars:hover + .header__nav , .header__nav:hover{
+.header__nav--visible{
     position: absolute;
     right: 10px;
-    top: 30px;
+    top: 50px;
     display: block;
-    width: 60vw;
+    width: 40vw;
     color: var(--text-on-primary);
     border: 1px solid var(--text-on-primary);
     display: flex;
@@ -76,7 +76,9 @@ body {
     align-items: center;
     gap: 10px;
 }
-
+.header__nav__row {
+    display: none;
+}
 .header__nav__list_item {list-style-type: none;
     margin: 10px;
 }
@@ -751,20 +753,17 @@ padding: 3%;
     .header {
         justify-content: space-evenly;
     }
-    .header__bars {
+    .header__toggler {
         display: none;
         width: 0;
         height: 0;
     }
-    .header__nav:hover {
-        all: initial;
-    }
-    .header__nav   {
+    .header__nav__row   {
         display: block;
         background-color: transparent;
         animation: none;
     }
-    .header__nav__list{
+    .header__nav__row__ist{
         display: flex ;
         flex-direction: row;
         margin: 0;
@@ -785,3 +784,26 @@ padding: 3%;
         margin: 20px auto;
     }
 }
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+
+
+.left-entry {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  .right-entry {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
