@@ -3,41 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
-        <h2>LEMI</h2>
-        <button><i class="fa-solid fa-bars" ></i></button>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./MyResume.html">Resume</a></li>
-                <li><a href="./MyProjects.html">Projects</a></li>
-                <li><a href="./Contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="bg-purple-500">
+    <nav class="container flex justify-between p-4 items-center">
+        <a href="#" class="text-xl font-bold text-white">
+            <h1 class="text-5xl text-bold">LEMI</h1>
+        </a>
+        <div class="relative md:hidden">
+            <button class="  text-white px-4 py-2 rounded-md">
+                <i class="fa-solid fa-bars text-3xl"></i>
+            </button>
+            <div class="absolute text-center w-screen right-0 hidden bg-purple-500 border border-gray-300 rounded-md">
+                <a href="home.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Home</a>
+                <a href="About.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About</a>
+                <a href="MyProjects.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Projects</a>
+                <a href="MyResume.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Resume</a>
+                <a href="Contacts.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Contacts</a>
+            </div>
+        </div>
+        <div class="hidden md:flex space-x-4">
+            <a href="home.html" class="text-white">Home</a>
+            <a href="About.html" class="text-white">About</a>
+            <a href="MyProjects.html" class="text-white">Projects</a>
+            <a href="MyResume.html" class="text-white">Resume</a>
+            <a href="Contacts.html" class="text-white">Contacts</a>
+        </div>
+    </nav>
+</header>
     <main>
     
-    <section>
-        <h1>My Projects</h1>
-        <p>Lorem ipsum dolor sit amet  possimus libero a, 
+    <section class="section text-center">
+        <div class="container mx-auto">
+          <h1 class="text-4xl font-bold mb-4">My Projects</h1>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, possimus libero a, 
             nisi consequatur beatae repellat perferendis 
-            facilis omnis reprehenderit Lorem ipsum dolor 
+            facilis omnis reprehenderit. Lorem ipsum dolor 
             sit amet consectetur adipisicing elit. Dolor
             accusamus deserunt nulla natus, quis magnam 
-            hic itaque </p>
-        
-    </section>  
-    <div>
-        <div>
+            hic itaque?
+          </p>
+        </div>
+      </section>
+    <section class="container mx-auto text-center">
+      
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-2/3 sm:w-full mx-auto">
+          <div class="shadow-md rounded-md p-3" >
             <video src="images/PlaceholderVideo.mp4" autoplay loop></video>
             <section>
-                <h3>Vroomy.com</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
+                <h3 class="text-lg md:text-xl lg:text-lg font-bold">Vroomy.com</h3>
+                <p  class="p-2">Lorem ipsum dolor sit amet  possimus libero a, 
+                    nisi consequatur beatae repellat perferendis 
+                    facilis omnis reprehenderit Lorem ipsum dolor 
+                    sit amet consectetur adipisicing elit. Dolor
+                    accusamus deserunt nulla natus, quis magnam 
+                    hic itaque</p>
+                    <a  href="#">View Site</a>
+                    <a href="#">View Repo</a>
+            </section>
+           
+          </div>
+      
+          <div class="shadow-md rounded-md p-3">
+            <video src="images/PlaceholderVideo.mp4" autoplay loop></video>
+            <section >
+                <h3 class="text-lg md:text-xl lg:text-lg font-bold">Weather Web App</h3>
+                <p class="p-2">Lorem ipsum dolor sit amet  possimus libero a, 
                     nisi consequatur beatae repellat perferendis 
                     facilis omnis reprehenderit Lorem ipsum dolor 
                     sit amet consectetur adipisicing elit. Dolor
@@ -46,12 +81,13 @@
                     <a href="#">View Site</a>
                     <a href="#">View Repo</a>
             </section>
-        </div>
-        <div>
+           
+          </div>
+          <div class="shadow-md rounded-md p-3">
             <video src="images/PlaceholderVideo.mp4" autoplay loop></video>
-            <section>
-                <h3>Weather Web App</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
+            <section >
+                <h3 class="text-lg md:text-xl lg:text-lg font-bold">Dictionary Web App</h3>
+                <p class="p-2">Lorem ipsum dolor sit amet  possimus libero a, 
                     nisi consequatur beatae repellat perferendis 
                     facilis omnis reprehenderit Lorem ipsum dolor 
                     sit amet consectetur adipisicing elit. Dolor
@@ -60,12 +96,13 @@
                     <a href="#">View Site</a>
                     <a href="#">View Repo</a>
             </section>
-        </div>
-        <div>
+           
+          </div>
+          <div class="shadow-md rounded-md p-3">
             <video src="images/PlaceholderVideo.mp4" autoplay loop></video>
-            <section>
-                <h3>Dictionary Web App</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
+            <section >
+                <h3 class="text-lg md:text-xl lg:text-lg font-bold">MineSweeper</h3>
+                <p class="p-2">Lorem ipsum dolor sit amet  possimus libero a, 
                     nisi consequatur beatae repellat perferendis 
                     facilis omnis reprehenderit Lorem ipsum dolor 
                     sit amet consectetur adipisicing elit. Dolor
@@ -74,65 +111,80 @@
                     <a href="#">View Site</a>
                     <a href="#">View Repo</a>
             </section>
+           
+          </div>
+      
+         
+      </section> 
+   
+      <section class="section my-5">
+        <h2 class="title text-2xl p-4 ml-5">Testimonials</h2>
+        <div class="flex items-center gap-5 justify-center mt-4">
+          <div class=" md:flex items-center space-x-2">
+            <span class="icon">
+              <i class="fas fa-chevron-left"></i>
+            </span>
+          </div>
+      
+          <div class="flex flex-col items-center
+           justify-center card text-center sm:w-1/2 md:w-1/3
+           
+           rounded-md shadow-md">
+                <img  class="image w-16 h-16" src="./images/profile.png" alt="image of the testimony giver">
+                <p class="title text-lg md:text-xl">Dawit Getachew</p>
+                <p class="subtitle text-sm md:text-base">A Project Manager</p>
+                <p class="text-sm md:text-base p-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus, aliquid. Excepturi nihil magnam natus incidunt sint, error voluptates quos iusto
+                </p>
+          </div>
+      
+          <div class=" md:flex items-center space-x-2">
+            <span class="icon">
+              <i class="fas fa-chevron-right"></i>
+            </span>
+          </div>
         </div>
-        <div>
-            <video src="images/PlaceholderVideo.mp4" autoplay loop ></video>
-            <section>
-                <h3>MineSweeper</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                    nisi consequatur beatae repellat perferendis 
-                    facilis omnis reprehenderit Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Dolor
-                    accusamus deserunt nulla natus, quis magnam 
-                    hic itaque</p>
-                <a href="#">View Site</a>
-                <a href="#">View Repo</a>
-            </section>
-        </div>
-        
-    </div>
-    <section class="testimonials-section">
-        <h2>Testimonials</h2>
-        <div>
-            
-            <i class="fa-solid fa-chevron-left"></i>
-            <div>
-                <img src="./images/profile.png" alt="image of the testimony givers">
-                <h3>Dawit Getachew</h3>
-                <h4>A Project Manager</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Delectus, aliquid. Excepturi nihil magnam natus incidunt sint, error voluptates quos iusto</p>
-            </div>
-            <i class="fa-solid fa-chevron-right"></i>
-            </div>
-    </section>
+      </section>  
     </main>
 
     
-    <footer>
-        <section>
-            <h3>Contacts</h3>
-            <ul>
-            <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-            <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-            <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Links</h3>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
-            </ul>
-        </section>
-        <div>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-twitter"></i>
+    <footer class="footer bg-gray-900 text-white p-5">
+        <div class="container mx-auto justify-between flex flex-col md:flex-row">
+          <div class="mb-8 md:mb-0 md:mr-12">
+            <section>
+              <h3 class="title text-lg md:text-xl">Contacts</h3>
+              <ul class="list-none">
+                <li><i class="fas fa-location-dot"></i> Addis Ababa, 5-Kilo</li>
+                <li><i class="fas fa-envelope"></i> lemidinq@gmail.com</li>
+                <li><i class="fas fa-phone"></i> +251912334309</li>
+              </ul>
+            </section>
+          </div>
+          <div class=" mb-8 md:mb-0">
+            <section>
+              <h3 class="title text-lg md:text-xl">Links</h3>
+              <ul class="list-none">
+                <li><a href="./home.html" class="text-gray-400 hover:text-white">Home</a></li>
+                <li><a href="./About.html" class="text-gray-400 hover:text-white">About</a></li>
+                <li><a href="./MyResume.html" class="text-gray-400 hover:text-white">Resume</a></li>
+                <li><a href="./MyProjects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+                <li><a href="./Contacts.html" class="text-gray-400 hover:text-white">Contacts</a></li>
+              </ul>
+            </section>
         </div>
-    </footer>
+      
+            <div class="flex justify-evenly  md:flex-col md:justify-center md:items-end ">
+              <a href="#" class="text-gray-400 hover:text-white text-3xl"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white text-3xl"><i class="fab fa-github"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white text-3xl"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+      
+        <div class="mt-8 text-center">
+          <p>&copy; Copyright</p>
+        </div>
+      </footer>
+      <script src="./js/dropdown.js"></script>
 </body>
 </html>

@@ -2,184 +2,279 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Portifolio</title>
 </head>
-<body>
-    <header>
-        <h2>LEMI</h2>
-        <button><i class="fa-solid fa-bars" ></i></button>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./MyResume.html">Resume</a></li>
-                <li><a href="./MyProjects.html">Projects</a></li>
-                <li><a href="./Contacts.html">Contacts</a></li>
-            </ul>
+<body >
+    <header class="bg-purple-500">
+        <nav class="container flex justify-between p-4 items-center">
+            <a href="#" class="text-xl font-bold text-white">
+                <h1 class="text-5xl text-bold">LEMI</h1>
+            </a>
+            <div class="relative md:hidden">
+                <button class="  text-white px-4 py-2 rounded-md">
+                    <i class="fa-solid fa-bars text-3xl"></i>
+                </button>
+                <div class="absolute text-center w-screen right-0 hidden bg-purple-500 border border-gray-300 rounded-md">
+                    <a href="home.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Home</a>
+                    <a href="About.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About</a>
+                    <a href="MyProjects.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Projects</a>
+                    <a href="MyResume.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Resume</a>
+                    <a href="Contacts.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Contacts</a>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="home.html" class="text-white">Home</a>
+                <a href="About.html" class="text-white">About</a>
+                <a href="MyProjects.html" class="text-white">Projects</a>
+                <a href="MyResume.html" class="text-white">Resume</a>
+                <a href="Contacts.html" class="text-white">Contacts</a>
+            </div>
         </nav>
     </header>
     <main>
-    <div class="intro-section">
-        <div>
-            <h1>LEMI DINKU</h1>
-            <h2>Software Engineer</h2>
-            <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                nisi consequatur beatae repellat perferendis 
-                facilis omnis reprehenderit </p>
-            </div>
-        <img src="./images/image1.jpg" alt="Image of Lemi Dinku">
-    </div>
-    <section>
-        <h2>Who Am I?</h2>
-        <section>
-            <h3>An Engineer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Obcaecati ad, dolorum 
-                est magnam recusandae quis id maiores nihil
-                 vitae commodi ut laudantium accusantium, 
-                 iusto eligendi asperiores 
-               sapiente officiis tempore delectus! </p>
-        </section>
-        <section>
-            <h3>An Engineer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur
-                 adipisicing elit. Obcaecati ad, dolorum 
-                 est magnam recusandae quis id maiores nihil
-                  vitae commodi ut laudantium accusantium, 
-                  iusto eligendi asperiores 
-                sapiente officiis tempore delectus! </p>
-        </section>
-        <section>
-            <h3>An Engineer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Obcaecati ad, dolorum 
-                est magnam recusandae quis id maiores nihil
-                 vitae commodi ut laudantium accusantium, 
-                 iusto eligendi asperiores 
-               sapiente officiis tempore delectus! </p>
-        </section>
-        </section>
-        <section >
-            <h3>Experience</h3>
-            <p>Lorem ipsum dolor sit amet,
-                 consectetur adipiscing elit. 
-                 Sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip
-                 ex ea commodo consequat. Duis aute irure dolor
-                  in reprehenderit in voluptate velit esse cillum
-                   dolore eu fugiat nulla pariatur. Excepteur sint 
-                   occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
-            </p>
-            <button>My Resume</button>
-        </section>
-        <section class="skills-section">
-            <h2>Skills</h2>
-            <div>
-                <section>
-                    <h4>Python</h4>
-                    <h2>90%</h2>
-                    <h4>2 years</h4>
-                </section>
-                <section>
-                    <h4>JavaScript</h4>
-                    <h2>88%</h2>
-                    <h4>1 years</h4>
-                </section>
-                <section>
-                    <h4>React Js</h4>
-                    <h2>80%</h2>
-                    <h4>6 months</h4>
-                </section>
-                <section>
-                    <h4>Node Js</h4>
-                    <h2>80%</h2>
-                    <h4>4 months</h4>
-                </section>
-            </div>
-
-            <div>
-                <h4>Java</h4>
-                <span>85%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+    <section class=" py-16">
+        <div class="container mx-auto">
+            <div class="flex  flex-col-reverse md:flex-row items-center justify-center">
+                <div class="w-full  pr-8 ">
+                    <h1 class="text-4xl font-bold mb-2">LEMI DINKU</h1>
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-4">Software Engineer</h2>
+                    <p class="text-gray-600">
+                        Lorem ipsum dolor sit amet possimus libero a, 
+                        nisi consequatur beatae repellat perferendis 
+                        facilis omnis reprehenderit
+                    </p>
+                </div>
+                <div class="w-full mx-auto">
+                        <img  style="width: 50%;" src="./images/image1.jpg" alt="Image of Lemi Dinku">
                 </div>
             </div>
-            <div>
-                <h4>MySQL</h4>
-                <span>82%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>Bootstrap</h4>
-                <span>80%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>MongoDB</h4>
-                <span>85%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>FireBase</h4>
-                <span>75%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>CSS</h4>
-                <span>90%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-        </section>
-        <section class="testimonials-section">
-            <h2>Testimonials</h2>
-            <div>
-                
-                <i class="fa-solid fa-chevron-left"></i>
-                <div>
-                    <img src="./images/profile.png" alt="image of the testimony givers">
-                    <h3>Dawit Getachew</h3>
-                    <h4>A Project Manager</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Delectus, aliquid. Excepturi nihil magnam natus incidunt sint, error voluptates quos iusto</p>
-                </div>
-                <i class="fa-solid fa-chevron-right"></i>
-                </div>
-        </section>
-    </main>
-    <footer>
-        <section>
-            <h3>Contacts</h3>
-            <ul>
-            <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-            <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-            <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Links</h3>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
-            </ul>
-        </section>
-        <div>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-twitter"></i>
         </div>
-    </footer>
+    </section>
+
+        <section class="section text-center ">
+            <div class="container mx-auto my-5">
+                <h2 id="who-am-i" class="text-3xl font-bold my-6">Who Am I?</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-14 items-center">
+                    <div class=" w-2/3 sm:w-full mx-auto">
+                        <div class="w-full
+                         bg-white p-6 rounded-md 
+                        shadow-md 
+                         hover:bg-purple-700
+                         hover:text-white hover:text-opacity-80"
+                         >
+                            <h3 class="text-xl font-semibold mb-3">An Engineer</h3>
+                            <p class="text-opacity-80">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ad, dolorum 
+                                est magnam recusandae quis id maiores nihil vitae commodi ut laudantium accusantium, 
+                                iusto eligendi asperiores sapiente officiis tempore delectus!
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" w-2/3 sm:w-full mx-auto">
+                        <div class="w-full
+                         bg-white p-6 rounded-md 
+                        shadow-md 
+                         hover:bg-purple-700
+                         hover:text-white hover:text-opacity-80"
+                         >
+                            <h3 class="text-xl font-semibold mb-3">An Engineer</h3>
+                            <p class="text-opacity-80">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ad, dolorum 
+                                est magnam recusandae quis id maiores nihil vitae commodi ut laudantium accusantium, 
+                                iusto eligendi asperiores sapiente officiis tempore delectus!
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" w-2/3 sm:w-full mx-auto">
+                        <div class="w-full
+                         bg-white p-6 rounded-md 
+                        shadow-md 
+                         hover:bg-purple-700
+                         hover:text-white hover:text-opacity-80"
+                         >
+                            <h3 class="text-xl font-semibold mb-3">An Engineer</h3>
+                            <p class="text-opacity-80">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ad, dolorum 
+                                est magnam recusandae quis id maiores nihil vitae commodi ut laudantium accusantium, 
+                                iusto eligendi asperiores sapiente officiis tempore delectus!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    <section class="section bg-purple-700 text-white text-opacity-80">
+        <div class="container mx-auto py-1">
+                <h3 class="text-3xl font-bold my-3 text-center ">Experience</h3>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            <div class="flex items-center justify-center">
+                <a href="./MyResume.html" class="my-5 m">
+                    My Resume <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="mx-6">
+            <section class="section">
+                <div class="container mx-auto md:w-2/3 lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-8">Skills</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="flex items-center justify-center flex-col bg-white p-4 rounded-md shadow-md w-1/2 md:w-full mx-auto">
+                            <h4 class="text-lg font-semibold mb-2">Python</h4>
+                            <h2 class="text-2xl font-bold mb-2">90%</h2>
+                            <p>2 years</p>
+                        </div>
+                        <div class="flex items-center justify-center flex-col bg-white p-4 rounded-md shadow-md w-1/2 md:w-full mx-auto">
+                            <h4 class="text-lg font-semibold mb-2">JavaScript</h4>
+                            <h2 class="text-2xl font-bold mb-2">88%</h2>
+                            <p>1 year</p>
+                        </div>
+                        <div class="flex items-center justify-center flex-col bg-white p-4 rounded-md shadow-md w-1/2 md:w-full mx-auto">
+                            <h4 class="text-lg font-semibold mb-2">React Js</h4>
+                            <h2 class="text-2xl font-bold mb-2">80%</h2>
+                            <p>6 months</p>
+                        </div>
+                        <div class="flex items-center justify-center flex-col bg-white p-4 rounded-md shadow-md w-1/2 md:w-full mx-auto">
+                            <h4 class="text-lg font-semibold mb-2">Node Js</h4>
+                            <h2 class="text-2xl font-bold mb-2">80%</h2>
+                            <p>4 months</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+          <div class="container py-4 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                <div class="bg-white p-4 rounded-md shadow-md w-2/3 md:w-full mx-auto">
+                    <div class="flex justify-between">
+                        <h4 class="font-semibold">Java</h4>
+                        <span>85%</span>
+                    </div>
+                    <progress class="progress w-full" value="85" max="100">85%</progress>
+                </div>
+                <div class="bg-white p-4 rounded-md shadow-md w-2/3 md:w-full mx-auto">
+                    <div class="flex justify-between">
+                        <h4 class="font-semibold">MySQL</h4>
+                        <span>82%</span>
+                    </div>
+                    <progress class="progress w-full" value="82" max="100">82%</progress>
+                </div>
+                <div class="bg-white p-4 rounded-md shadow-md w-2/3 md:w-full mx-auto">
+                    <div class="flex justify-between">
+                        <h4 class="font-semibold">Bootstrap</h4>
+                        <span>80%</span>
+                    </div>
+                    <progress class="progress w-full" value="80" max="100">80%</progress>
+                </div>
+                <div class="bg-white p-4 rounded-md shadow-md w-2/3 md:w-full mx-auto">
+                    <div class="flex justify-between">
+                        <h4 class="font-semibold">MongoDB</h4>
+                        <span>85%</span>
+                    </div>
+                    <progress class="progress w-full bg-blue-500" value="85" max="100">85%</progress>
+                </div>
+                <div class="bg-white p-4 rounded-md shadow-md w-2/3 md:w-full mx-auto">
+                    <div class="flex justify-between">
+                        <h4 class="font-semibold">Firebase</h4>
+                        <span>75%</span>
+                    </div>
+                    <progress class="progress w-full" value="75" max="100">75%</progress>
+                </div>
+                <div class="bg-white p-4 rounded-md shadow-md w-2/3 md:w-full mx-auto">
+                    <div class="flex justify-between">
+                        <h4 class="font-semibold">CSS</h4>
+                        <span>87%</span>
+                    </div>
+                    <progress class=" w-full" value="87" max="100">
+            
+
+                        </div>
+                    </progress>
+                </div>
+            </div>
+        </div>       
+        </section>
+          <section class="section my-5">
+            <h2 class="title text-2xl p-4 ml-5">Testimonials</h2>
+            <div class="flex items-center gap-5 justify-center mt-4">
+              <div class=" md:flex items-center space-x-2">
+                <span class="icon">
+                  <i class="fas fa-chevron-left"></i>
+                </span>
+              </div>
+          
+              <div class="flex flex-col items-center
+               justify-center card text-center sm:w-1/2 md:w-1/3
+               
+               rounded-md shadow-md">
+                    <img  class="image w-16 h-16" src="./images/profile.png" alt="image of the testimony giver">
+                    <p class="title text-lg md:text-xl">Dawit Getachew</p>
+                    <p class="subtitle text-sm md:text-base">A Project Manager</p>
+                    <p class="text-sm md:text-base p-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Delectus, aliquid. Excepturi nihil magnam natus incidunt sint, error voluptates quos iusto
+                    </p>
+              </div>
+          
+              <div class=" md:flex items-center space-x-2">
+                <span class="icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </section>    
+    </main>
+  <footer class="footer bg-gray-900 text-white p-5">
+    <div class="container mx-auto justify-between flex flex-col md:flex-row">
+      <div class="mb-8 md:mb-0 md:mr-12">
+        <section>
+          <h3 class="title text-lg md:text-xl">Contacts</h3>
+          <ul class="list-none">
+            <li><i class="fas fa-location-dot"></i> Addis Ababa, 5-Kilo</li>
+            <li><i class="fas fa-envelope"></i> lemidinq@gmail.com</li>
+            <li><i class="fas fa-phone"></i> +251912334309</li>
+          </ul>
+        </section>
+      </div>
+      <div class=" mb-8 md:mb-0">
+        <section>
+          <h3 class="title text-lg md:text-xl">Links</h3>
+          <ul class="list-none">
+            <li><a href="./home.html" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="./About.html" class="text-gray-400 hover:text-white">About</a></li>
+            <li><a href="./MyResume.html" class="text-gray-400 hover:text-white">Resume</a></li>
+            <li><a href="./MyProjects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+            <li><a href="./Contacts.html" class="text-gray-400 hover:text-white">Contacts</a></li>
+          </ul>
+        </section>
+    </div>
+  
+        <div class="flex justify-evenly  md:flex-col md:justify-center md:items-end ">
+          <a href="#" class="text-gray-400 hover:text-white text-3xl"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white text-3xl"><i class="fab fa-github"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white text-3xl"><i class="fab fa-telegram"></i></a>
+        </div>
+    </div>
+  
+    <div class="mt-8 text-center">
+      <p>&copy; Copyright</p>
+    </div>
+  </footer>
+  <script src="./js/dropdown.js"></script>
 </body>
 </html>
