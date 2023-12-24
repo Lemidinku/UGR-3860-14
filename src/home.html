@@ -3,183 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
-        <h2>LEMI</h2>
-        <button><i class="fa-solid fa-bars" ></i></button>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./MyResume.html">Resume</a></li>
-                <li><a href="./MyProjects.html">Projects</a></li>
-                <li><a href="./Contacts.html">Contacts</a></li>
-            </ul>
+
+    <header class="bg-primary ">
+        <nav class="container-fluid navbar navbar-expand-md navbar-dark p-4 flex-row row-cols-md-2 ">
+            <a href="home.html" class="navbar-brand  font-bold text-gray-800 mr-10">
+                <span>LEMI</span>
+            </a>
+            <button class="navbar-toggler" type="button"  id="toggleButton">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-auto" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="home.html" class="nav-link text-white mx-auto ">Home</a></li>
+                    <li class="nav-item"><a href="About.html" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="MyProjects.html" class="nav-link text-white">Projects</a></li>
+                    <li class="nav-item"><a href="MyResume.html" class="nav-link text-white">Resume</a></li>
+                    <li class="nav-item"><a href="Contacts.html" class="nav-link text-white">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-    <div class="intro-section">
-        <div>
-            <h1>LEMI DINKU</h1>
-            <h2>Software Engineer</h2>
-            <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                nisi consequatur beatae repellat perferendis 
-                facilis omnis reprehenderit </p>
+        <div class="container mx-auto my-4 ">
+            <div class="row flex-md-row-reverse  align-items-center justify-content-center mx-auto">
+                <div class="col-md-6">
+                    <img class="w-50" src="./images/image1.jpg" alt="Image of Lemi Dinku">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="text-4xl font-bold mb-2">LEMI DINKU</h1>
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-4">Software Engineer</h2>
+                    <p class="text-gray-600">
+                        Lorem ipsum dolor sit amet possimus libero a, 
+                        nisi consequatur beatae repellat perferendis 
+                        facilis omnis reprehenderit
+                    </p>
+                </div>
+                
             </div>
-        <img src="./images/image1.jpg" alt="Image of Lemi Dinku">
-    </div>
-    <section>
-        <h2>Who Am I?</h2>
-        <section>
-            <h3>An Engineer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Obcaecati ad, dolorum 
-                est magnam recusandae quis id maiores nihil
-                 vitae commodi ut laudantium accusantium, 
-                 iusto eligendi asperiores 
-               sapiente officiis tempore delectus! </p>
+        </div>
+    
+            <div class="container text-center m-3  py-4 mx-auto  ">
+                <h2 class="text-bg-dar my-5">Who Am I?</h2>
+                <div class="row  gap-1">
+                    <div class="col-8 col-md-3 border-4 bg-light  p-4  shadow-lg rounded-4 mx-auto  my-3 ">
+                        <div class="card-content p-6">
+                            <h3 class="subtitle">An Engineer</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Obcaecati ad, dolorum 
+                                est magnam recusandae quis id maiores nihil
+                                vitae commodi ut laudantium accusantium, 
+                                iusto eligendi asperiores 
+                                sapiente officiis tempore delectus!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-3 border-4 bg-light  p-4  shadow-lg rounded-4 mx-auto  my-3 ">
+                        <div class="card-content p-6">
+                            <h3 class="subtitle">An Engineer</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Obcaecati ad, dolorum 
+                                est magnam recusandae quis id maiores nihil
+                                vitae commodi ut laudantium accusantium, 
+                                iusto eligendi asperiores 
+                                sapiente officiis tempore delectus!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-3 border-4 bg-light  p-4  shadow-lg rounded-4 mx-auto my-3 ">
+                        <div class="card-content p-6">
+                            <h3 class="subtitle">An Engineer</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Obcaecati ad, dolorum 
+                                est magnam recusandae quis id maiores nihil
+                                vitae commodi ut laudantium accusantium, 
+                                iusto eligendi asperiores 
+                                sapiente officiis tempore delectus!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <section class="bg-primary text-white text-center ">
+            <div class="container py-1">
+                <h3 class="my-3 ">Experience</h3>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="./MyResume.html" class="my-3 m-2 btn btn-primary">
+                        My Resume <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
         </section>
-        <section>
-            <h3>An Engineer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur
-                 adipisicing elit. Obcaecati ad, dolorum 
-                 est magnam recusandae quis id maiores nihil
-                  vitae commodi ut laudantium accusantium, 
-                  iusto eligendi asperiores 
-                sapiente officiis tempore delectus! </p>
-        </section>
-        <section>
-            <h3>An Engineer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Obcaecati ad, dolorum 
-                est magnam recusandae quis id maiores nihil
-                 vitae commodi ut laudantium accusantium, 
-                 iusto eligendi asperiores 
-               sapiente officiis tempore delectus! </p>
-        </section>
-        </section>
+        
         <section >
-            <h3>Experience</h3>
-            <p>Lorem ipsum dolor sit amet,
-                 consectetur adipiscing elit. 
-                 Sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip
-                 ex ea commodo consequat. Duis aute irure dolor
-                  in reprehenderit in voluptate velit esse cillum
-                   dolore eu fugiat nulla pariatur. Excepteur sint 
-                   occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
-            </p>
-            <button>My Resume</button>
+            <h2 class="h3 font-weight-bold m-4">Skills</h2>
+
+
+                <div class="container mx-auto w-75 ">
+                    <div class="row gap-1 ">
+                        <div class="col-8 col-md-4 col-lg-2 mb-4  rounded-4 mx-auto bg-white p-4 rounded-md shadow text-center mr-1">
+                                <h4 >Python</h4>
+                                <h2 >90%</h2>
+                                <p>2 years</p>
+                        </div>
+                        <div class="col-8 col-md-4 col-lg-2 mb-4  rounded-4 mx-auto bg-white p-4 rounded-md shadow text-center">
+                                <h4 >JavaScript</h4>
+                                <h2 >88%</h2>
+                                <p>1 year</p>
+                        </div>
+                        <div class="col-8 col-md-4 col-lg-2 mb-4  rounded-4 mx-auto bg-white p-4 rounded-md shadow text-center">
+                            
+                                <h4 >React Js</h4>
+                                <h2 >80%</h2>
+                                <p>6 months</p>
+                            
+                        </div>
+                        <div class="col-8 col-md-4 col-lg-2 mb-4  rounded-4 mx-auto bg-white p-4 rounded-md shadow text-center">
+                            
+                                <h4 >Node Js</h4>
+                                <h2 >80%</h2>
+                                <p>4 months</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            <div class="container py-4 mx-auto">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="bg-white p-4 rounded-md shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <h4 class="font-weight-semibold">Java</h4>
+                    <span>85%</span>
+                </div>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="bg-white p-4 rounded-md shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <h4 class="font-weight-semibold">MySQL</h4>
+                    <span>82%</span>
+                </div>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="bg-white p-4 rounded-md shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <h4 class="font-weight-semibold">Bootstrap</h4>
+                    <span>80%</span>
+                </div>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="bg-white p-4 rounded-md shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <h4 class="font-weight-semibold">MongoDB</h4>
+                    <span>85%</span>
+                </div>
+                <div class="progress mt-2 bg-blue">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="bg-white p-4 rounded-md shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <h4 class="font-weight-semibold">Firebase</h4>
+                    <span>75%</span>
+                </div>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="bg-white p-4 rounded-md shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <h4 class="font-weight-semibold">CSS</h4>
+                    <span>87%</span>
+                </div>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+        <section class="section my-5">
+            <h2 class="p-4 ml-5">Testimonials</h2>
+            <div class="d-flex  justify-content-center  align-items-center  mt-4 col-12 col-sm-8 col-md-6 mx-auto ">
+                <div class="fs-3">                 
+                        <i class="fas fa-chevron-left"></i>
+                </div>
+        
+                <div class=" text-center  rounded-4  mx-4  shadow-lg p-5">
+                    <img class="w-25  mx-auto  my-3 " src="./images/profile.png" alt="image of the testimony giver">
+                    <p class="fs-4 ">Dawit Getachew</p>
+                    <p class="fs-5 ">A Project Manager</p>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Delectus, aliquid. Excepturi nihil magnam natus incidunt sint, error voluptates quos iusto
+                    </p>
+                </div>
+        
+                <div class="fs-3">
+                        <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
         </section>
-        <section class="skills-section">
-            <h2>Skills</h2>
-            <div>
-                <section>
-                    <h4>Python</h4>
-                    <h2>90%</h2>
-                    <h4>2 years</h4>
-                </section>
-                <section>
-                    <h4>JavaScript</h4>
-                    <h2>88%</h2>
-                    <h4>1 years</h4>
-                </section>
-                <section>
-                    <h4>React Js</h4>
-                    <h2>80%</h2>
-                    <h4>6 months</h4>
-                </section>
-                <section>
-                    <h4>Node Js</h4>
-                    <h2>80%</h2>
-                    <h4>4 months</h4>
-                </section>
+        
+    </main>
+    <footer class="footer bg-dark text-white p-5 fs-4">
+        <div class="container mx-auto row">
+            <div class=" col-10 col-md-6 ">
+                    <h3 class="fs-3">Contacts</h3>
+                    <ul class="list-unstyled my-3">
+                        <li><i class="fas fa-location-dot"></i> Addis Ababa, 5-Kilo</li>
+                        <li><i class="fas fa-envelope"></i> lemidinq@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +251912334309</li>
+                    </ul>
+            </div>
+            <div class="col-10 col-md-4 my-3 ">
+                    <h3 class="fs-3 ">Links</h3>
+                    <ul class="list-unstyled  m-3 ">
+                        <li><a href="./home.html" class="text-gray-400 hover-text-white text-decoration-none">Home</a></li>
+                        <li><a href="./About.html" class="text-gray-400 hover-text-white text-decoration-none">About</a></li>
+                        <li><a href="./MyResume.html" class="text-gray-400 hover-text-white text-decoration-none">Resume</a></li>
+                        <li><a href="./MyProjects.html" class="text-gray-400 hover-text-white text-decoration-none">Projects</a></li>
+                        <li><a href="./Contacts.html" class="text-gray-400 hover-text-white text-decoration-none">Contacts</a></li>
+                    </ul>
             </div>
 
-            <div>
-                <h4>Java</h4>
-                <span>85%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+            <div class="d-flex justify-content-between col-10 col-md-2 flex-md-column justify-content-md-center align-items-md-end gap-2">
+                <a href="#" class="text-gray-400 hover-text-white text-3xl"><i class="fab fa-linkedin fs-1 text-white"></i></a>
+                <a href="#" class="text-gray-400 hover-text-white text-3xl"><i class="fab fa-github fs-1 text-white"></i></a>
+                <a href="#" class="text-gray-400 hover-text-white text-3xl"><i class="fab fa-telegram fs-1 text-white"></i></a>
             </div>
-            <div>
-                <h4>MySQL</h4>
-                <span>82%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>Bootstrap</h4>
-                <span>80%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>MongoDB</h4>
-                <span>85%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>FireBase</h4>
-                <span>75%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div>
-                <h4>CSS</h4>
-                <span>90%</span>
-                <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-        </section>
-        <section class="testimonials-section">
-            <h2>Testimonials</h2>
-            <div>
-                
-                <i class="fa-solid fa-chevron-left"></i>
-                <div>
-                    <img src="./images/profile.png" alt="image of the testimony givers">
-                    <h3>Dawit Getachew</h3>
-                    <h4>A Project Manager</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Delectus, aliquid. Excepturi nihil magnam natus incidunt sint, error voluptates quos iusto</p>
-                </div>
-                <i class="fa-solid fa-chevron-right"></i>
-                </div>
-        </section>
-    </main>
-    <footer>
-        <section>
-            <h3>Contacts</h3>
-            <ul>
-            <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-            <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-            <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Links</h3>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
-            </ul>
-        </section>
-        <div>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-twitter"></i>
+        </div>
+    
+        <div class="mt-4 mt-md-8 text-center">
+            <p>&copy; Copyright</p>
         </div>
     </footer>
+    <script src="js/toggle.js"></script>
 </body>
 </html>

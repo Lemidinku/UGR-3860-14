@@ -3,99 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
-        <h2>LEMI</h2>
-        <button><i class="fa-solid fa-bars" ></i></button>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./MyResume.html">Resume</a></li>
-                <li><a href="./MyProjects.html">Projects</a></li>
-                <li><a href="./Contacts.html">Contacts</a></li>
-            </ul>
+    <header class="bg-primary ">
+        <nav class="container-fluid navbar navbar-expand-md navbar-dark p-4 flex-row row-cols-md-2 ">
+            <a href="home.html" class="navbar-brand  font-bold text-gray-800 mr-10">
+                <span>LEMI</span>
+            </a>
+            <button class="navbar-toggler" type="button"  id="toggleButton">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-auto" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="home.html" class="nav-link text-white mx-auto ">Home</a></li>
+                    <li class="nav-item"><a href="About.html" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="MyProjects.html" class="nav-link text-white">Projects</a></li>
+                    <li class="nav-item"><a href="MyResume.html" class="nav-link text-white">Resume</a></li>
+                    <li class="nav-item"><a href="Contacts.html" class="nav-link text-white">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
     
-    <section>
-        <h1>Contacts</h1>
-        <p>Lorem ipsum dolor sit amet  possimus libero a, 
-            nisi reprehenderit Lorem ipsum dolor sit amet </p>
+        <section class="section text-center my-8">
+            <div class="container mx-auto">
+                <h1 class="display-4 font-weight-bold mb-4">Contacts</h1>
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet, possimus libero a, nisi consequatur beatae repellat perferendis
+                    facilis omnis reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                    accusamus deserunt nulla natus, quis magnam hic itaque non dolorem reprehenderit ducimus
+                    suscipit impedit, doloribus perspiciatis, modi consequatur aspernatur nesciunt laboriosam?
+                </p>
+            </div>
+        </section>
         
-    </section>
-    <div>
-        <div>
-            <h3><a href="#">Let's Collaborate</a></h3>
-            <h4>ON</h4>
-            <img src="./images/github.png" alt="github logo">
-            
-        </div>
-        <div>
-            <h3><a href="#">Follow Me</a></h3>
-            <h4>ON</h4>
-            <img src="./images/linkedin.png" alt="LinkedIn logo">
-            
-        </div>
-        <div>
-            <h3><a href="#">Hire Me</a></h3>
-            <h4>ON</h4>
-            <img src="./images/upwork.png" alt="Upwork logo">
-            
-        </div>
-        <div>
-            <img src="images/image1.jpg" alt="landscape image">
-            <section>
+            <div class="container mx-auto my-4 ">
+                <div class="row gap-3 justify-content-center  ">
+                    <div class="col-6 col-sm-3  p-4 rounded-4  shadow-lg text-center ">
+                        <h3><a class="fs-5" href="#">Let's Collaborate</a></h3>
+                        <h4>ON</h4>
+                        <img src="./images/github.png" alt="github logo" class="img-fluid  w-50  mx-auto">
+                    </div>
+                    <div class=" col-sm-3 col-6  p-4 rounded-4   shadow-lg text-center  ">
+                        <h3><a href="#">Follow Me</a></h3>
+                        <h4>ON</h4>
+                        <img src="./images/linkedin.png" alt="LinkedIn logo" class="img-fluid w-50  mx-auto">
+                    </div>
+                    <div class="col-6 col-sm-3 p-4 rounded-4  shadow-lg text-center ">
+                        <h3><a href="#">Hire Me</a></h3>
+                        <h4>ON</h4>
+                        <img src="./images/upwork.png" alt="Upwork logo" class="img-fluid w-75  mx-auto">
+                    </div>
+                </div>
+            </div>
+        
+        <div class="container  row my-5  mx-auto  ">
+            <img class="img-fluid col-8 col-sm-5 mx-auto " src="images/image1.jpg" alt="landscape image">
+            <section class="col-8 col-sm-5 mx-auto my-4 ">
                 <h3>Contact Details</h3>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-user-tie" ></i> Lemi Dinku Gilo <audio src="" ></audio>
-
-                    </li>
-                    <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-                    <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-                    <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-                    <li><i class="fa-brands fa-telegram"></i> @lemidinq</li>
-
+                <ul class="list-unstyled fs-3 ">
+                    <li><i class="fas fa-user-tie m-2 "></i> Lemi Dinku Gilo</li>
+                    <li><i class="fas fa-location-dot m-2"></i> Addis Ababa, 5-Kilo</li>
+                    <li><i class="fas fa-envelope m-2"></i> lemidinq@gmail.com</li>
+                    <li><i class="fas fa-phone m-2"></i> +251912334309</li>
+                    <li><i class="fab fa-telegram m-2"></i> @lemidinq</li>
                 </ul>
             </section>
         </div>
-    </div>
-    
-
-    
     </main>
-    <footer>
-        <section>
-            <h3>Contacts</h3>
-            <ul>
-            <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-            <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-            <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Links</h3>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
-            </ul>
-        </section>
-        
-            <ul>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-        
+    <footer class="footer bg-dark text-white p-5 fs-4">
+        <div class="container mx-auto row">
+            <div class=" col-10 col-md-6 ">
+                    <h3 class="fs-3">Contacts</h3>
+                    <ul class="list-unstyled my-3">
+                        <li><i class="fas fa-location-dot"></i> Addis Ababa, 5-Kilo</li>
+                        <li><i class="fas fa-envelope"></i> lemidinq@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +251912334309</li>
+                    </ul>
+            </div>
+            <div class="col-10 col-md-4 my-3 ">
+                    <h3 class="fs-3 ">Links</h3>
+                    <ul class="list-unstyled  m-3 ">
+                        <li><a href="./home.html" class="text-gray-400 hover-text-white text-decoration-none">Home</a></li>
+                        <li><a href="./About.html" class="text-gray-400 hover-text-white text-decoration-none">About</a></li>
+                        <li><a href="./MyResume.html" class="text-gray-400 hover-text-white text-decoration-none">Resume</a></li>
+                        <li><a href="./MyProjects.html" class="text-gray-400 hover-text-white text-decoration-none">Projects</a></li>
+                        <li><a href="./Contacts.html" class="text-gray-400 hover-text-white text-decoration-none">Contacts</a></li>
+                    </ul>
+            </div>
+
+            <div class="d-flex justify-content-between col-10 col-md-2 flex-md-column justify-content-md-center align-items-md-end gap-2">
+                <a href="#" class="text-gray-400 hover-text-white text-3xl"><i class="fab fa-linkedin fs-1 text-white"></i></a>
+                <a href="#" class="text-gray-400 hover-text-white text-3xl"><i class="fab fa-github fs-1 text-white"></i></a>
+                <a href="#" class="text-gray-400 hover-text-white text-3xl"><i class="fab fa-telegram fs-1 text-white"></i></a>
+            </div>
+        </div>
+    
+        <div class="mt-4 mt-md-8 text-center">
+            <p>&copy; Copyright</p>
+        </div>
     </footer>
+    <script src="js/toggle.js"></script>
+
 </body>
 </html>

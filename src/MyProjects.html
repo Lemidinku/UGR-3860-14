@@ -3,136 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
-        <h2>LEMI</h2>
-        <button><i class="fa-solid fa-bars" ></i></button>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
-                <li><a href="./MyResume.html">Resume</a></li>
-                <li><a href="./MyProjects.html">Projects</a></li>
-                <li><a href="./Contacts.html">Contacts</a></li>
-            </ul>
+    <header class="bg-primary ">
+        <nav class="container-fluid navbar navbar-expand-md navbar-dark p-4 flex-row row-cols-md-2 ">
+            <a href="home.html" class="navbar-brand  font-bold text-gray-800 mr-10">
+                <span>LEMI</span>
+            </a>
+            <button class="navbar-toggler" type="button"  id="toggleButton">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-auto" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="home.html" class="nav-link text-white mx-auto ">Home</a></li>
+                    <li class="nav-item"><a href="About.html" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="MyProjects.html" class="nav-link text-white">Projects</a></li>
+                    <li class="nav-item"><a href="MyResume.html" class="nav-link text-white">Resume</a></li>
+                    <li class="nav-item"><a href="Contacts.html" class="nav-link text-white">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-    
-    <section>
-        <h1>My Projects</h1>
-        <p>Lorem ipsum dolor sit amet  possimus libero a, 
-            nisi consequatur beatae repellat perferendis 
-            facilis omnis reprehenderit Lorem ipsum dolor 
-            sit amet consectetur adipisicing elit. Dolor
-            accusamus deserunt nulla natus, quis magnam 
-            hic itaque </p>
-        
-    </section>  
-    <div>
-        <div>
-            <video src="images/PlaceholderVideo.mp4" autoplay loop></video>
-            <section>
-                <h3>Vroomy.com</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                    nisi consequatur beatae repellat perferendis 
-                    facilis omnis reprehenderit Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Dolor
-                    accusamus deserunt nulla natus, quis magnam 
-                    hic itaque</p>
-                    <a href="#">View Site</a>
-                    <a href="#">View Repo</a>
-            </section>
-        </div>
-        <div>
-            <video src="images/PlaceholderVideo.mp4" autoplay loop></video>
-            <section>
-                <h3>Weather Web App</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                    nisi consequatur beatae repellat perferendis 
-                    facilis omnis reprehenderit Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Dolor
-                    accusamus deserunt nulla natus, quis magnam 
-                    hic itaque</p>
-                    <a href="#">View Site</a>
-                    <a href="#">View Repo</a>
-            </section>
-        </div>
-        <div>
-            <video src="images/PlaceholderVideo.mp4" autoplay loop></video>
-            <section>
-                <h3>Dictionary Web App</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                    nisi consequatur beatae repellat perferendis 
-                    facilis omnis reprehenderit Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Dolor
-                    accusamus deserunt nulla natus, quis magnam 
-                    hic itaque</p>
-                    <a href="#">View Site</a>
-                    <a href="#">View Repo</a>
-            </section>
-        </div>
-        <div>
-            <video src="images/PlaceholderVideo.mp4" autoplay loop ></video>
-            <section>
-                <h3>MineSweeper</h3>
-                <p>Lorem ipsum dolor sit amet  possimus libero a, 
-                    nisi consequatur beatae repellat perferendis 
-                    facilis omnis reprehenderit Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Dolor
-                    accusamus deserunt nulla natus, quis magnam 
-                    hic itaque</p>
-                <a href="#">View Site</a>
-                <a href="#">View Repo</a>
-            </section>
-        </div>
-        
-    </div>
-    <section class="testimonials-section">
-        <h2>Testimonials</h2>
-        <div>
-            
-            <i class="fa-solid fa-chevron-left"></i>
-            <div>
-                <img src="./images/profile.png" alt="image of the testimony givers">
-                <h3>Dawit Getachew</h3>
-                <h4>A Project Manager</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Delectus, aliquid. Excepturi nihil magnam natus incidunt sint, error voluptates quos iusto</p>
+        <section class="section text-center ">
+            <div class="container mx-auto">
+                <h1 class="display-4 font-weight-bold mb-4">My Projects</h1>
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet, possimus libero a, nisi consequatur beatae repellat perferendis
+                    facilis omnis reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                    accusamus deserunt nulla natus, quis magnam hic itaque?
+                </p>
             </div>
-            <i class="fa-solid fa-chevron-right"></i>
-            </div>
-    </section>
+        </section>
+        
+        <section class="container mx-auto text-center my-5">
+            <div class="row  mx-auto justify-content-center gap-2">
+                    <div class="col-md-5 shadow rounded p-3 my-2">
+                        <video class="img-fluid " src="images/PlaceholderVideo.mp4" autoplay loop></video>
+                        <section>
+                            <h3 class="h5 md:h6 lg:h5 font-weight-bold">Vroomy.com</h3>
+                            <p class="p-2">Lorem ipsum dolor sit amet possimus libero a, nisi consequatur beatae repellat
+                                perferendis facilis omnis reprehenderit Lorem ipsum </p>
+                            <a href="#" class="btn btn-primary">View Site</a>
+                            <a href="#" class="btn btn-secondary">View Repo</a>
+                        </section>
+                    </div>
+        
+                    <div class="col-md-5 shadow rounded  p-3 my-2">
+                        <video class="img-fluid " src="images/PlaceholderVideo.mp4" autoplay loop></video>
+                        <section>
+                            <h3 class="h5 md:h6 lg:h5 font-weight-bold">Weather Web App</h3>
+                            <p class="p-2">Lorem ipsum dolor sit amet possimus libero a, nisi consequatur beatae repellat
+                                perferendis facilis omnis reprehenderit Lorem ipsum dolor </p>
+                            <a href="#" class="btn btn-primary">View Site</a>
+                            <a href="#" class="btn btn-secondary">View Repo</a>
+                        </section>
+                    </div>
+        
+                    <div class="col-md-5 shadow rounded  p-3 my-2">
+                        <video class="img-fluid " src="images/PlaceholderVideo.mp4" autoplay loop></video>
+                        <section>
+                            <h3 class="h5 md:h6 lg:h5 font-weight-bold">Dictionary Web App</h3>
+                            <p class="p-2">Lorem ipsum dolor sit amet possimus libero a, nisi consequatur beatae repellat
+                                perferendis facilis omnis reprehenderit Lorem ipsum dolor sit </p>
+                            <a href="#" class="btn btn-primary">View Site</a>
+                            <a href="#" class="btn btn-secondary">View Repo</a>
+                        </section>
+                </div>
+        
+                    <div class="col-md-5 shadow rounded  p-3 my-2">
+                        <video class="img-fluid " src="images/PlaceholderVideo.mp4" autoplay loop></video>
+                        <section>
+                            <h3 class="h5 md:h6 lg:h5 font-weight-bold">MineSweeper</h3>
+                            <p class="p-2">Lorem ipsum dolor sit amet possimus libero a, nisi consequatur beatae repellat
+                                perferendis facilis omnis reprehenderit Lorem ipsum dolor sit</p>
+                            <a href="#" class="btn btn-primary">View Site</a>
+                            <a href="#" class="btn btn-secondary">View Repo</a>
+                        </section>
+                    </div>
+                </div>
+        </section>
+        
     </main>
 
     
-    <footer>
-        <section>
-            <h3>Contacts</h3>
-            <ul>
-            <li><i class="fa-solid fa-location-dot"></i>  Addis Ababa, 5-Kilo</li>
-            <li><i class="fa-solid fa-envelope"></i> lemidinq@gmail.com</li>
-            <li><i class="fa-solid fa-phone"></i> +251912334309</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Links</h3>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
-            </ul>
-        </section>
-        <div>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-twitter"></i>
+    <footer class="footer bg-dark text-white p-5 fs-4">
+        <div class="container mx-auto row">
+            <div class=" col-10 col-md-6 ">
+                    <h3 class="fs-3">Contacts</h3>
+                    <ul class="list-unstyled my-3">
+                        <li><i class="fas fa-location-dot"></i> Addis Ababa, 5-Kilo</li>
+                        <li><i class="fas fa-envelope"></i> lemidinq@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +251912334309</li>
+                    </ul>
+            </div>
+            <div class="col-10 col-md-4 my-3 ">
+                    <h3 class="fs-3 ">Links</h3>
+                    <ul class="list-unstyled  m-3 ">
+                        <li><a href="./home.html" class="text-gray-400 hover-text-white text-decoration-none">Home</a></li>
+                        <li><a href="./About.html" class="text-gray-400 hover-text-white text-decoration-none">About</a></li>
+                        <li><a href="./MyResume.html" class="text-gray-400 hover-text-white text-decoration-none">Resume</a></li>
+                        <li><a href="./MyProjects.html" class="text-gray-400 hover-text-white text-decoration-none">Projects</a></li>
+                        <li><a href="./Contacts.html" class="text-gray-400 hover-text-white text-decoration-none">Contacts</a></li>
+                    </ul>
+            </div>
+
+            <div class="d-flex justify-content-between col-10 col-md-2 flex-md-column justify-content-md-center align-items-md-end gap-2">
+                <a href="#" class="text-gray-400 hover-text-white text-3xl"><i class="fab fa-linkedin fs-1 text-white"></i></a>
+                <a href="#" class="text-gray-400 hover-text-white text-3xl"><i class="fab fa-github fs-1 text-white"></i></a>
+                <a href="#" class="text-gray-400 hover-text-white text-3xl"><i class="fab fa-telegram fs-1 text-white"></i></a>
+            </div>
+        </div>
+    
+        <div class="mt-4 mt-md-8 text-center">
+            <p>&copy; Copyright</p>
         </div>
     </footer>
+    <script src="js/toggle.js"></script>
+
 </body>
 </html>
